@@ -21,6 +21,10 @@ Aquí está el material de las prácticas. Trabajas con tu propia pregunta y tu 
 - Comprueba lo que Claude afirma: abre los artículos y mira los números.
 - Si no puedes explicar una decisión, todavía no es tuya.
 
+## Para tu propio proyecto
+
+[Plantilla básica](plantilla/README.md) ([descargar](descargas/PLANTILLA.zip)): contexto, datos, análisis y grill-me, lista para abrir en VS Code o en Claude. Es opcional y está pensada para que la cambies.
+
 ## Skills
 
 [grill-me y grilling](skills/README.md): te interrogan sobre un plan hasta aclararlo. Puedes modificarlas.

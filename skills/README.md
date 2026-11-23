@@ -4,7 +4,7 @@ Son de [Matt Pocock](https://github.com/mattpocock/skills), versión 1.2.3, sin 
 
 ## Usarlas
 
-- **En una práctica:** los ZIP de las sesiones 2 y 3 ya las traen donde hacen falta.
+- **En una práctica:** los ZIP de las sesiones 2 y 3 y la [plantilla](../plantilla/README.md) ya las traen donde hacen falta.
 - **En otro proyecto con Claude Code:** copia las dos carpetas en `.claude/skills/` y escribe `/grill-me`.
 
 ## Modificarlas

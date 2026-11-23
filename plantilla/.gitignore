@@ -1,0 +1,8 @@
+# Entorno de Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Los datos no se suben a GitHub salvo que lo decidas
+datos/*
+!datos/LEEME.md
