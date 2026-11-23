@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual de TheAIWriter</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
+<style>
+/* Cabecera en tinta, dos diagramas a todo el ancho y después manual en una columna con tablas */
+:root {
+  --papel: #ffffff; --tinta: #203247; --sobre-tinta: #ffffff; --cabecera: #203247;
+  --suave: #566575; --rejilla: #dde3e8; --hielo: #eef6f8; --niebla: #eff3f6; --crema: #fff4de;
+  --naranja: #a3540b; --verde: #00706b; --azul: #2d6d97; --morado: #7a5397;
+  --mano: Caveat, "Segoe Print", "Bradley Hand", cursive;
+  --texto: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "Source Code Pro", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --papel: #131c27; --tinta: #e6edf4; --sobre-tinta: #ffffff; --cabecera: #24405c;
+  --suave: #a3b2c1; --rejilla: #34424f; --hielo: #1a2936; --niebla: #1f2d3a; --crema: #33291a;
+  --naranja: #eda35c; --verde: #4fc4bc; --azul: #7fbde6; --morado: #c5a4e0; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --papel: #131c27; --tinta: #e6edf4; --sobre-tinta: #ffffff; --cabecera: #24405c;
+  --suave: #a3b2c1; --rejilla: #34424f; --hielo: #1a2936; --niebla: #1f2d3a; --crema: #33291a;
+  --naranja: #eda35c; --verde: #4fc4bc; --azul: #7fbde6; --morado: #c5a4e0; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--papel); color: var(--tinta); font: 400 17px/1.55 var(--texto) }
+.pagina { max-width: 1060px; margin: 0 auto; padding-block: 32px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 56px }
+.cabecera { background: var(--cabecera); color: var(--sobre-tinta); padding: 22px 28px 20px;
+  clip-path: polygon(0 3%, 34% 0, 71% 2%, 100% 0, 99.6% 60%, 100% 97%, 62% 100%, 27% 98%, 0 100%) }
+.cabecera h1 { font: 600 clamp(40px, 7vw, 62px)/1.05 var(--mano); margin: 0 }
+.cabecera p { margin: 6px 0 0; max-width: 60ch }
+section { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px }
+h2 { font: 600 38px/1.1 var(--mano); margin: 0; text-wrap: balance }
+h3 { font: 600 19px/1.3 var(--texto); margin: 0; text-wrap: balance }
+p, ul, ol { margin: 0; max-width: 68ch }
+ul, ol { padding-left: 1.2em; display: grid; gap: 6px }
+code { font: 400 .88em var(--mono); background: var(--niebla); padding: 1px 5px; overflow-wrap: anywhere }
+pre { margin: 0; background: var(--niebla); padding: 14px 16px; overflow-x: auto; font: 400 14px/1.6 var(--mono) }
+pre code { background: none; padding: 0; overflow-wrap: normal; font-size: inherit }
+a { color: var(--azul) }
+a:focus-visible { outline: 2px solid var(--azul); outline-offset: 2px }
+.desliza { overflow-x: auto }
+.nota { color: var(--suave); font-size: 15.5px }
+
+/* Diagrama 1 */
+svg.mapa { display: block; width: 100%; min-width: 760px; height: auto }
+.mapa text { fill: var(--tinta); font: 400 15px var(--texto) }
+.mapa .t { font: 600 25px var(--mano) }
+.mapa .m { font: 400 13.5px var(--mono) }
+.mapa .s { fill: var(--suave); font-size: 14px }
+.mapa rect { fill: var(--hielo); stroke: var(--tinta); stroke-width: 2 }
+.mapa .grupo { fill: none; stroke-dasharray: 5 5; stroke-width: 1.8 }
+.mapa .e { stroke: var(--naranja) } .mapa .z { stroke: var(--morado) } .mapa .c { stroke: var(--verde) } .mapa .o { stroke: var(--azul) }
+.mapa path.l { fill: none; stroke: var(--tinta); stroke-width: 1.8; marker-end: url(#punta) }
+.mapa .punta { fill: var(--tinta) }
+
+/* Diagrama 2: entra, paso, sale */
+.flujo { display: grid; gap: 14px }
+.fila { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1fr); column-gap: 46px; align-items: stretch }
+.fila > div { position: relative; padding: 12px 16px; border: 2px solid var(--rejilla); min-width: 0; display: grid; align-content: center; gap: 4px }
+.fila > .entra { border-color: var(--naranja) }
+.fila > .paso { border-color: var(--verde); background: var(--hielo) }
+.fila > .sale { border-color: var(--azul) }
+.fila > .entra::after, .fila > .paso::after { content: ""; position: absolute; left: 100%; top: 50%; margin-left: 10px; width: 20px; height: 2px; background: var(--tinta) }
+.fila > .entra::before, .fila > .paso::before { content: ""; position: absolute; left: 100%; top: 50%; margin-left: 24px; width: 8px; height: 8px;
+  border-top: 2px solid var(--tinta); border-right: 2px solid var(--tinta); transform: translateY(-3px) rotate(45deg) }
+.rotulo { font: 600 23px/1.1 var(--mono); font-size: 16px; overflow-wrap: anywhere }
+.titulos > div { border: 0; padding: 0 16px; font: 600 25px/1.1 var(--mano) }
+.titulos > .entra { color: var(--naranja) } .titulos > .paso { color: var(--verde); background: none } .titulos > .sale { color: var(--azul) }
+.titulos > div::before, .titulos > div::after { display: none }
+.mini { font-size: 15px; line-height: 1.4; color: var(--suave) }
+@media (max-width: 720px) {
+  .titulos { display: none }
+  .fila { grid-template-columns: minmax(0, 1fr); row-gap: 30px; padding-bottom: 18px }
+  .fila > .entra::after, .fila > .paso::after { left: 50%; top: 100%; margin: 6px 0 0; width: 2px; height: 16px }
+  .fila > .entra::before, .fila > .paso::before { left: 50%; top: 100%; margin: 15px 0 0 -3px; transform: rotate(135deg) }
+  .fila > .entra > span:first-child::before { content: "Entra: "; font-weight: 600; color: var(--naranja) }
+  .fila > .sale > span:first-child::before { content: "Sale: "; font-weight: 600; color: var(--azul) }
+}
+
+/* Tablas */
+table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 16px }
+th { text-align: left; background: var(--niebla); font-weight: 600 }
+th, td { padding: 9px 12px; border-bottom: 1px solid var(--rejilla); vertical-align: top }
+td code { white-space: nowrap }
+.si { font-weight: 600; color: var(--verde) } .op { color: var(--suave) } .no { color: var(--suave) }
+.pasos { display: grid; gap: 26px; list-style: none; padding: 0; max-width: none }
+.pasos > li { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 14px }
+.num { font: 600 46px/1 var(--mano); color: var(--verde) }
+.pasos > li > div { display: grid; gap: 8px; min-width: 0 }
+.gasto { background: var(--crema); padding: 10px 14px; max-width: 68ch }
+</style>
+<style>@media print { @page { size: A4; margin: 14mm } body { font-size: 14px } section { break-inside: auto } h2 { break-after: avoid } .fila, tr, .pasos > li, svg.mapa { break-inside: avoid } .desliza { overflow: visible } svg.mapa { min-width: 0 } table { min-width: 0; font-size: 13px } td code { white-space: normal } pre { white-space: pre-wrap } .pagina { gap: 30px; padding: 0 } * { print-color-adjust: exact; -webkit-print-color-adjust: exact } }</style>
+<style>@media print { .pagina, section { display: block } .pagina > * + * { margin-top: 26px } section > * + * { margin-top: 12px } h2 { font-size: 30px } .fila { column-gap: 40px; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) minmax(0, 1.1fr); margin-bottom: 10px } .flujo { display: block } .fila code, td code { font-size: 11px; white-space: nowrap; padding: 1px 3px } .rotulo { font-size: 11px; overflow-wrap: normal; white-space: nowrap } .titulos > div { font-size: 22px !important } .fila > div { padding: 8px 10px; font-size: 13px } .mini { font-size: 12px } th, td { padding: 6px 8px } thead { display: table-row-group } h2, h2 + p { break-after: avoid } }</style>
+</head>
+<body style="margin:0">
+
+<div class="pagina">
+<header class="cabecera">
+  <h1>Manual de TheAIWriter</h1>
+  <p>Escribe documentos científicos con los PDF de tu Zotero y comprueba que cada cita dice lo que dice el artículo. Versión 0.5.3.</p>
+</header>
+
+<section>
+  <h2>Qué hay y cómo se conecta</h2>
+  <p>Claude escribe en tu sesión de Claude Code. El plugin le da acceso a tus artículos y comprueba lo que escribe. Todo queda en la carpeta del documento.</p>
+  <div class="desliza">
+  <svg class="mapa" viewBox="0 0 1000 510" role="img" aria-label="Zotero alimenta el índice de pasajes. Claude Code con el plugin lee el índice y tus archivos, escribe el borrador y deja informes en la carpeta del documento. Con Pandoc se pasa a Word o LibreOffice.">
+    <defs><marker id="punta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="punta" d="M0 0L10 5L0 10z"/></marker></defs>
+    <rect class="z" x="16" y="104" width="200" height="90"/>
+    <text class="t" x="34" y="140">Zotero</text><text x="34" y="164">obras y sus PDF</text><text class="s" x="34" y="184">el plugin solo lo lee</text>
+    <path class="l" d="M116 194V262"/>
+    <rect class="z" x="16" y="266" width="200" height="90"/>
+    <text class="t" x="34" y="302">Índice de pasajes</text><text x="34" y="326">fragmentos buscables</text><text class="s" x="34" y="346">en tu ordenador</text>
+
+    <rect class="grupo c" x="306" y="46" width="256" height="334"/>
+    <text class="t" x="324" y="82">Claude Code + plugin</text>
+    <rect class="c" x="326" y="104" width="216" height="90"/>
+    <text class="t" x="342" y="138">Planifica y escribe</text><text x="342" y="162">busca y lee pasajes</text><text class="s" x="342" y="182">nuevo, escribir, corregir</text>
+    <rect class="c" x="326" y="224" width="216" height="132"/>
+    <text class="t" x="342" y="258">Comprueba y revisa</text><text x="342" y="284">citas, cifras, cobertura</text><text x="342" y="306">juez de citas y revisor</text><text class="s" x="342" y="326">los dos, en segundo plano</text><text class="s" x="342" y="345">comprobar, revisar</text>
+    <path class="l" d="M216 311H302"/><text class="s" x="234" y="303">pasajes</text>
+
+    <rect class="grupo" x="666" y="46" width="318" height="334"/>
+    <text class="t" x="684" y="82">Carpeta del documento</text>
+    <rect class="e" x="686" y="104" width="278" height="74"/>
+    <text class="t" x="702" y="134">Lo que pones tú</text><text class="m" x="702" y="158">materiales/ resultados/ …</text>
+    <rect class="o" x="686" y="200" width="278" height="70"/>
+    <text class="t" x="702" y="230">Borrador</text><text class="m" x="702" y="254">borrador/documento.md</text>
+    <rect class="o" x="686" y="292" width="278" height="70"/>
+    <text class="t" x="702" y="322">Informes</text><text class="m" x="702" y="346">informes/*.md</text>
+    <path class="l" d="M686 132H546"/>
+    <path class="l" d="M542 168H614V222H682"/>
+    <path class="l" d="M686 248H546"/>
+    <path class="l" d="M542 326H682"/>
+    <path class="l" d="M825 380V428"/><text class="s" x="840" y="410">Pandoc</text>
+    <rect class="o" x="686" y="432" width="278" height="66"/>
+    <text class="t" x="702" y="461">Word o LibreOffice</text><text class="m" x="702" y="484">exportacion/</text>
+  </svg>
+  </div>
+</section>
+
+<section>
+  <h2>El camino: qué entra y qué sale</h2>
+  <div class="flujo">
+    <div class="fila titulos"><div class="entra">Entra</div><div class="paso">Paso</div><div class="sale">Sale</div></div>
+    <div class="fila">
+      <div class="entra"><span>Título, tipo, idioma y colecciones de Zotero</span></div>
+      <div class="paso"><span class="rotulo">/theaiwriter:nuevo</span><span class="mini">Crea la carpeta y te dice qué falta</span></div>
+      <div class="sale"><span><code>proyecto.yaml</code>, carpetas y plantillas con preguntas</span></div>
+    </div>
+    <div class="fila">
+      <div class="entra"><span><code>materiales/abstract.md</code> y lo propio del tipo de documento</span></div>
+      <div class="paso"><span class="rotulo">/theaiwriter:escribir con pausa</span><span class="mini">Plan, tu visto bueno y borrador</span></div>
+      <div class="sale"><span><code>plan.md</code>, <code>documento.md</code>, <code>referencias.bib</code></span></div>
+    </div>
+    <div class="fila">
+      <div class="entra"><span>El borrador y los PDF de Zotero</span></div>
+      <div class="paso"><span class="rotulo">/theaiwriter:comprobar</span><span class="mini">Citas, literalidad, cifras y apoyo de cada frase</span></div>
+      <div class="sale"><span><code>informes/comprobacion.md</code></span></div>
+    </div>
+    <div class="fila">
+      <div class="entra"><span>El informe y tu elección: todas, «1, 3» o ninguna</span></div>
+      <div class="paso"><span class="rotulo">/theaiwriter:corregir</span><span class="mini">Propone antes y después; aplica lo que aceptes</span></div>
+      <div class="sale"><span><code>documento.md</code> corregido e informe al día</span></div>
+    </div>
+    <div class="fila">
+      <div class="entra"><span>El borrador y los criterios de la convocatoria o revista</span></div>
+      <div class="paso"><span class="rotulo">/theaiwriter:revisar</span><span class="mini">Dónde trabajar más; no toca el borrador</span></div>
+      <div class="sale"><span><code>informes/revision.md</code></span></div>
+    </div>
+    <div class="fila">
+      <div class="entra"><span><code>documento.md</code>, <code>referencias.bib</code>, estilo CSL y plantilla</span></div>
+      <div class="paso"><span class="rotulo">Pandoc</span><span class="mini">Fuera del plugin, con una orden de terminal</span></div>
+      <div class="sale"><span><code>exportacion/documento.docx</code> u <code>.odt</code></span></div>
+    </div>
+  </div>
+  <p class="nota">En cualquier momento, <code>/theaiwriter:estado</code> dice dónde estás y qué toca, y <code>/theaiwriter:diagnostico</code> comprueba la instalación y la biblioteca.</p>
+</section>
+
+<section>
+  <h2>Antes de empezar</h2>
+  <ul>
+    <li><b>Claude Code</b>, en la aplicación de escritorio o en la terminal, con tu cuenta.</li>
+    <li><b>Zotero</b> en el mismo ordenador, con los PDF adjuntos a las obras. Las obras sin PDF no se pueden consultar ni comprobar, y los PDF escaneados sin texto tampoco.</li>
+    <li><b>uv</b> instalado (es lo que prepara el entorno del plugin).</li>
+  </ul>
+  <p>Instálalo desde Claude Code:</p>
+  <pre><code>/plugin marketplace add mikelval82/TheAiWriter
+/plugin install theaiwriter@theaiwriter</code></pre>
+  <p>Reinicia Claude Code y escribe <code>/theaiwriter:diagnostico</code>. La primera vez que se indexan artículos se descarga el modelo de búsqueda, de unos cientos de MB.</p>
+</section>
+
+<section>
+  <h2>Uso, paso a paso</h2>
+  <ol class="pasos">
+    <li><span class="num">1</span><div><h3>Crea el documento</h3>
+      <p>Abre Claude Code en una carpeta vacía y escribe <code>/theaiwriter:nuevo</code> con tu idea. Te propone título, tipo, idioma y colección; contesta «vale» o di qué cambias.</p></div></li>
+    <li><span class="num">2</span><div><h3>Rellena los materiales</h3>
+      <p>Contesta las preguntas de <code>materiales/abstract.md</code> y añade los archivos de tu tipo de documento (tabla siguiente). <code>/theaiwriter:estado</code> te dice lo que falta.</p></div></li>
+    <li><span class="num">3</span><div><h3>Escribe</h3>
+      <p><code>/theaiwriter:escribir con pausa</code> deja el plan en <code>borrador/plan.md</code> y espera. Léelo, pide cambios y contesta «aprobado». Al acabar comprueba el borrador.</p></div></li>
+    <li><span class="num">4</span><div><h3>Lee la comprobación y corrige</h3>
+      <p>Las comprobaciones sin modelo salen al momento. El juez tarda unos minutos y Claude te avisa en tu siguiente mensaje. Mira las frases <b>tergiversadas</b>, <b>no apoyadas</b> y <b>parciales</b>, y usa <code>/theaiwriter:corregir</code>. Después, <code>/theaiwriter:comprobar</code> vuelve a juzgar las frases cambiadas.</p></div></li>
+    <li><span class="num">5</span><div><h3>Revisa por criterios</h3>
+      <p><code>/theaiwriter:revisar</code>, o <code>/theaiwriter:revisar PLOS Computational Biology</code> con sus normas en <code>revista/</code>. Si hay ficha de criterios, te la enseña y espera tu «sí».</p></div></li>
+    <li><span class="num">6</span><div><h3>Pásalo a Word</h3>
+      <p>Con la orden de la última sección.</p></div></li>
+  </ol>
+  <p class="gasto"><b>Qué gasta de tu cuenta.</b> La conversación con Claude, sobre todo al escribir. Además, el juez hace una llamada por cada párrafo con citas y el revisor una por revisión. «Comprobar sin juez», <code>estado</code> y el índice no lanzan llamadas aparte.</p>
+</section>
+
+<section>
+  <h2>Archivos de entrada</h2>
+  <p>Lo que pones tú, según el tipo de documento que elijas en <code>nuevo</code>.</p>
+  <div class="desliza"><table>
+    <thead><tr><th>Archivo o carpeta</th><th>Perspectiva</th><th>Resultados</th><th>Convocatoria</th><th>Qué contiene</th></tr></thead>
+    <tbody>
+      <tr><td>Colección de Zotero</td><td class="si">sí</td><td class="si">sí</td><td class="si">sí</td><td>Las obras que se pueden citar, con su PDF. Si no eliges ninguna, se usa todo Zotero</td></tr>
+      <tr><td><code>materiales/abstract.md</code></td><td class="si">sí</td><td class="si">sí</td><td class="si">sí</td><td>Tus respuestas a las preguntas de la plantilla: tesis, resultado principal, hipótesis…</td></tr>
+      <tr><td><code>resultados/</code></td><td class="no">—</td><td class="si">sí</td><td class="no">—</td><td>Tablas CSV (al menos una), figuras y salidas en Markdown. De aquí salen todas tus cifras</td></tr>
+      <tr><td><code>analisis/</code></td><td class="no">—</td><td class="op">opcional</td><td class="no">—</td><td>El código que produjo los resultados</td></tr>
+      <tr><td><code>materiales/equipo.md</code></td><td class="no">—</td><td class="no">—</td><td class="si">sí</td><td>Personas y papel, resultados previos, recursos, presupuesto y duración. Lo que falte se marca <code>[PENDIENTE]</code>, no se inventa</td></tr>
+      <tr><td><code>convocatoria/*.pdf</code></td><td class="no">—</td><td class="no">—</td><td class="si">sí</td><td>Convocatoria, instrucciones de la memoria y plantilla oficiales</td></tr>
+      <tr><td><code>revista/*.pdf</code></td><td class="op">opcional</td><td class="op">opcional</td><td class="no">—</td><td>Guía para revisores o normas de autores. Vale una web guardada con Ctrl+P, si el texto se puede seleccionar</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Archivos de salida</h2>
+  <div class="desliza"><table>
+    <thead><tr><th>Archivo</th><th>Lo escribe</th><th>Para qué sirve</th></tr></thead>
+    <tbody>
+      <tr><td><code>proyecto.yaml</code></td><td>nuevo</td><td>Tipo, título, idioma y colecciones del documento</td></tr>
+      <tr><td><code>borrador/plan.md</code></td><td>escribir</td><td>Secciones, qué sostiene cada una y con qué obras</td></tr>
+      <tr><td><code>borrador/documento.md</code></td><td>escribir, corregir</td><td>El texto, con citas como <code>[@smith2020empathy]</code>. Puedes editarlo. <code>[@?]</code> marca una fuente por buscar</td></tr>
+      <tr><td><code>borrador/referencias.bib</code></td><td>comprobar</td><td>La bibliografía citada, para Pandoc. Se regenera sola</td></tr>
+      <tr><td><code>convocatoria/ficha.yaml</code><br><code>revista/ficha.yaml</code></td><td>escribir, revisar</td><td>Requisitos o criterios sacados de los PDF, cada uno con página y cita literal. Los confirmas tú</td></tr>
+      <tr><td><code>informes/comprobacion.md</code></td><td>comprobar</td><td>Citas, literalidad, cobertura, cifras, conformidad con la convocatoria y veredicto del juez</td></tr>
+      <tr><td><code>informes/revision.md</code></td><td>revisar</td><td>Tres prioridades y, por criterio, nivel (bien, mejorable o flojo), fortalezas, carencias y trabajo</td></tr>
+      <tr><td><code>exportacion/documento-zotero.md</code></td><td>si pides «prepara las citas vivas»</td><td>Copia del borrador con las claves de Better BibTeX</td></tr>
+      <tr><td><code>exportacion/documento.docx</code></td><td>Pandoc</td><td>El documento final (u <code>.odt</code>)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="nota">En <code>informes/</code> hay también archivos internos que no hace falta abrir: <code>consultas.json</code> (qué leyó Claude), <code>avisos.json</code>, los <code>.json</code> de cada informe y los <code>.log</code>. El índice de pasajes está en <code>Documentos/TheAIWriter/indice</code>.</p>
+</section>
+
+<section>
+  <h2>Qué comprueba y hasta dónde</h2>
+  <div class="desliza"><table>
+    <thead><tr><th>Comprobación</th><th>Usa un modelo</th><th>Qué mira</th></tr></thead>
+    <tbody>
+      <tr><td>Citas</td><td>No</td><td>Que la obra exista en Zotero y esté en tus colecciones, y cuáles no has citado</td></tr>
+      <tr><td>Citas literales</td><td>No</td><td>Que lo que va entre «» esté palabra por palabra en el PDF (6 palabras o más)</td></tr>
+      <tr><td>Frases sin cita</td><td>No</td><td>Las que parecen hablar de una obra y no la citan. Avisa de más y puede saltarse alguna</td></tr>
+      <tr><td>Cifras propias</td><td>No</td><td>En resultados: decimales y porcentajes que no están en tus tablas</td></tr>
+      <tr><td>Convocatoria</td><td>No</td><td>Apartados, orden, extensión estimada y límites de caracteres</td></tr>
+      <tr><td>Apoyo de las citas</td><td>Sí, el juez</td><td>Si cada frase dice lo que dice la obra</td></tr>
+      <tr><td>Revisión por criterios</td><td>Sí, el revisor</td><td>Dónde conviene trabajar más</td></tr>
+    </tbody>
+  </table></div>
+  <p>El juez y el revisor se equivocan a veces. Toma lo que señalan como una lista de cosas que mirar, y decide tú. Los veredictos de frases que no han cambiado no se rehacen.</p>
+</section>
+
+<section>
+  <h2>Pasar a Word o LibreOffice</h2>
+  <p>Con <a href="https://pandoc.org/installing.html">Pandoc</a> instalado, desde la carpeta del documento. Cambia <code>estilo.csl</code> por el de tu revista; los que usas en Zotero están en <code>~/Zotero/styles</code>.</p>
+  <pre><code>pandoc borrador/documento.md --citeproc --bibliography borrador/referencias.bib --csl estilo.csl --resource-path borrador -M lang=es -M reference-section-title=Referencias -o exportacion/documento.docx</code></pre>
+  <p>Con una plantilla oficial, añade <code>--reference-doc plantilla.docx</code>. Para citas que se actualizan desde Zotero hace falta Better BibTeX; los pasos están en la <a href="https://github.com/mikelval82/TheAiWriter/blob/master/docs/exportar.md">guía de exportación</a>. Funcionan en LibreOffice con salida <code>.odt</code>; en Word no se han probado.</p>
+</section>
+
+<section>
+  <h2>Si algo falla</h2>
+  <div class="desliza"><table>
+    <thead><tr><th>Qué ves</th><th>Qué hacer</th></tr></thead>
+    <tbody>
+      <tr><td>No sabes por dónde ibas</td><td><code>/theaiwriter:estado</code></td></tr>
+      <tr><td>El juez se ha parado por límite de uso</td><td><code>/theaiwriter:comprobar</code> cuando se renueve: sigue donde lo dejó</td></tr>
+      <tr><td>El informe dice «desactualizado»</td><td>El borrador ha cambiado. Pasa <code>/theaiwriter:comprobar</code></td></tr>
+      <tr><td>Una obra no aparece en las búsquedas</td><td>Mira que tenga el PDF en Zotero y pide <code>/theaiwriter:diagnostico actualiza el índice</code></td></tr>
+      <tr><td>Claude dice que una cita está bloqueada</td><td>La clave no existe o está fuera de tus colecciones: añade la obra en Zotero o usa <code>[@?]</code></td></tr>
+      <tr><td>Quieres la última versión</td><td><code>claude plugin marketplace update theaiwriter</code>, luego <code>claude plugin update theaiwriter@theaiwriter</code>, y reinicia Claude Code</td></tr>
+    </tbody>
+  </table></div>
+</section>
+</div>
+</body>
+</html>

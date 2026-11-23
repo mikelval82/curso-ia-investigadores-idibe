@@ -1,0 +1,15 @@
+Copyright (c) 2026 Mikel Val Calvo
+
+Los textos de este repositorio se distribuyen bajo la licencia Creative Commons
+Atribución 4.0 Internacional (CC BY 4.0).
+
+Resumen: https://creativecommons.org/licenses/by/4.0/deed.es
+Texto legal: https://creativecommons.org/licenses/by/4.0/legalcode.es
+
+Excepciones:
+- sesion3/preparar.py: licencia MIT (véase LICENSE-CODIGO).
+- skills/: licencia MIT de Matt Pocock (véase LICENSE.txt en cada carpeta).
+- sesion4/manual-theaiwriter.*: condiciones del repositorio de TheAIWriter,
+  https://github.com/mikelval82/TheAiWriter
+
+Los datos de la sesión 3 no se incluyen: se descargan de su origen.
