@@ -2,7 +2,7 @@
 
 Curso del IDiBE, Universidad Miguel Hernández, impartido por **Mikel Val Calvo**. Cuatro sesiones prácticas de dos horas, en diciembre de 2026.
 
-Aquí está el material de las prácticas. Trabajas con tu propia pregunta y tu propio proyecto; Claude o Codex ejecutan y tú decides.
+Aquí está el material de las prácticas. Trabajas con tu propia pregunta y tu propio proyecto; Claude ejecuta y tú decides. También puedes seguirlo con Codex, aunque algunos pasos cambian.
 
 ## Qué necesitas en cada sesión
 

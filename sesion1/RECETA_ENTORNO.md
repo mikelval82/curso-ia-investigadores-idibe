@@ -7,7 +7,7 @@ Objetivo: dejar listo tu ordenador para todo el curso. Sigue los pasos en orden.
 - **Portátil** con Windows 10/11, macOS o Linux, cargador y unos 5 GB libres.
 - **Permiso para instalar programas** en el portátil. Si es un equipo de la UMH gestionado por el servicio informático, pídelo antes del curso.
 - **Correo institucional** (@umh.es) y acceso a tu gestor de contraseñas o a una libreta para apuntar claves.
-- **Plan de pago de Claude** (Pro o superior) o, como alternativa, de ChatGPT para usar Codex. Cada participante usa el suyo.
+- **Plan de pago de Claude** (Pro o superior). Cada participante usa el suyo. El curso se enseña con Claude; con Codex (plan de ChatGPT) puedes seguirlo, pero algunos pasos cambian.
 - **Navegador** Chrome, Firefox, Edge o Safari actualizado.
 - **El móvil**, por si alguna cuenta pide un código de verificación.
 
@@ -39,14 +39,14 @@ Instálalas en este orden:
 8. **Claude** para escritorio: [claude.com/download](https://claude.com/download). Ábrela e inicia sesión con tu cuenta. Incluye el chat y la pestaña **Code** (Claude Code), que usaremos desde la sesión 2.
    - Si usas Codex: instala la app de Codex desde [chatgpt.com/codex](https://chatgpt.com/codex) e inicia sesión con tu cuenta de ChatGPT.
 9. **Zotero** para escritorio: [zotero.org/download](https://www.zotero.org/download). Instala también el **Zotero Connector** para tu navegador desde la misma página.
-10. **VS Code**: [code.visualstudio.com](https://code.visualstudio.com). Sirve para ver y editar los archivos de tu proyecto.
+10. **VS Code** (opcional): [code.visualstudio.com](https://code.visualstudio.com). Solo hace falta para el bonus de la sesión 3, donde se ven y editan los archivos del proyecto.
 11. **uv**, el programa que arranca el conector de Zotero. Abre una terminal (en Windows, PowerShell) y pega:
     - Mac / Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
     - Windows: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
 
-    Cierra la terminal, ábrela de nuevo y escribe `which uvx` (Mac / Linux) o `where uvx` (Windows). **Apunta la ruta completa** que aparece.
+    Cierra la terminal, ábrela de nuevo y escribe `which uvx` (Mac / Linux) o `where.exe uvx` (Windows, con el `.exe`). **Apunta la ruta completa** que aparece.
 
-✔ Claude, Zotero y VS Code se abren; la terminal te devuelve la ruta de `uvx`.
+✔ Claude y Zotero se abren; la terminal te devuelve la ruta de `uvx`.
 
 ## Parte D · Preparar Zotero (5 min)
 
@@ -78,6 +78,23 @@ Claude no toca tu Zotero de escritorio: trabaja sobre tu biblioteca en línea y 
     }
     ```
 
+    **Si el archivo está vacío o solo tiene `{}`**, borra lo que haya y pega esto entero:
+
+    ```json
+    {
+      "mcpServers": {
+        "zotero": {
+          "command": "RUTA_DE_UVX",
+          "args": ["--from", "zotero-library-mcp", "zotero-mcp"],
+          "env": {
+            "ZOTERO_LIBRARY_ID": "TU_NUMERO",
+            "ZOTERO_API_KEY": "TU_CLAVE"
+          }
+        }
+      }
+    }
+    ```
+
     En Windows, escribe la ruta con barras dobles: `C:\\Users\\ana\\.local\\bin\\uvx.exe`.
 
     **Si usas Codex**, en lugar de este paso abre `config.toml`, en la carpeta `.codex` de tu usuario, y añade al final:
@@ -92,7 +109,7 @@ Claude no toca tu Zotero de escritorio: trabaja sobre tu biblioteca en línea y 
     ZOTERO_API_KEY = "TU_CLAVE"
     ```
 
-    Esta parte está sin probar en clase: si falla, levanta la mano.
+    En Windows, aquí también van barras dobles en la ruta. Esta parte está sin probar en clase: si falla, levanta la mano.
 16. **Cierra Claude del todo**, no solo la ventana: en Windows, clic derecho en el icono junto al reloj → Salir; en Mac, `Cmd + Q`; en Linux, salir desde el icono de la bandeja. Vuelve a abrirla.
 17. **Comprueba.** Escribe en un chat nuevo: *«Comprueba la conexión con mi Zotero y lista mis colecciones»*.
 
@@ -115,7 +132,7 @@ Marca cada casilla antes de irte:
 
 - [ ] Entro en Claude, Zotero, Research Rabbit, Consensus y SciSpace.
 - [ ] He revisado la privacidad de mi cuenta de Claude.
-- [ ] Claude, Zotero y VS Code se abren en mi portátil.
+- [ ] Claude y Zotero se abren en mi portátil.
 - [ ] Zotero sincroniza con mi cuenta.
 - [ ] Claude lista mis colecciones de Zotero.
 - [ ] Claude busca en Consensus, PubMed y bioRxiv.

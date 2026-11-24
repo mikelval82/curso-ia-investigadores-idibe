@@ -34,7 +34,7 @@ Abre una terminal y pega:
 Cierra y abre la terminal, y averigua **dónde se ha instalado**:
 
 - Mac / Linux: `which uvx` → algo como `/Users/ana/.local/bin/uvx`
-- Windows: `where uvx` → algo como `C:\Users\ana\.local\bin\uvx.exe`
+- Windows: `where.exe uvx` (con el `.exe`) → algo como `C:\Users\ana\.local\bin\uvx.exe`
 
 **Apunta esa ruta.** Claude la necesita completa (no basta con poner `uvx`).
 
@@ -84,7 +84,7 @@ Vuelve a abrirla.
 Escríbele a Claude: *"Comprueba la conexión con mi Zotero y lista mis colecciones"*.
 
 Si te devuelve tus colecciones, ya está. Prueba algo real:
-> *"Busca 10 artículos recientes sobre X, verifica los DOIs y añádelos a una colección nueva llamada X-revisión."*
+> *"Busca 10 artículos recientes sobre X, comprueba que sus DOI existen y añádelos a una colección nueva llamada X-revisión."*
 
 ---
 
@@ -103,7 +103,7 @@ Si no lo ves claro, ve a **Ajustes → Desarrollador**: ahí aparece `zotero` co
 
 ## Buenas prácticas
 
-- **Revisa lo que entra.** Claude verifica los DOIs contra CrossRef, pero échale un ojo a la colección antes de citar nada.
+- **Revisa lo que entra.** Pídele a Claude que compruebe los DOI y échale un ojo a la colección antes de citar nada.
 - **Usa colecciones nuevas para cada búsqueda** (`tema-fecha`). Así, si algo no te convence, lo borras de golpe sin tocar el resto.
 - **Una clave por herramienta.** Si conectas Zotero a otras apps, crea una clave para cada una. Así puedes revocar solo la que quieras.
 
