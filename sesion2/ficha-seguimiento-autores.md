@@ -7,7 +7,7 @@
 Cada cierto tiempo (por ejemplo, los lunes a las 8:40), Claude:
 
 1. Revisa lo último que han publicado los investigadores de tu lista.
-2. Añade los papers **que de verdad merecen la pena** a la subcolección **«Novedades semanales»** de tu pregunta.
+2. Añade los artículos **que de verdad merecen la pena** a la subcolección **«Novedades semanales»** de tu pregunta.
 3. Deja **una nota con el resumen** en el elemento «Registro de novedades» de esa subcolección.
 
 Lo lees en Zotero cuando te venga bien. **No envía correos.**
@@ -18,7 +18,7 @@ Lo lees en Zotero cuando te venga bien. **No envía correos.**
 
 | Qué | Para qué |
 |---|---|
-| **Zotero conectado a Claude (MCP)** | Para guardar los papers y la nota. Quedó instalado en la sesión 1 |
+| **Zotero conectado a Claude (MCP)** | Para guardar los artículos y la nota. Quedó instalado en la sesión 1 |
 | **App de escritorio de Claude abierta** | El conector de Zotero se ejecuta dentro de la app. Claude guarda en tu biblioteca en línea y tu Zotero la recibe al sincronizar |
 | **Colección de tu pregunta con su subcolección «Novedades semanales»** | Para que lo nuevo no se mezcle con lo que ya has revisado |
 | **Lista de investigadores** | Para saber a quién seguir |
@@ -33,7 +33,7 @@ No hace falta tener cuenta en ninguna red social: Claude solo lee contenido púb
 
 | Fuente | Qué mira | Notas |
 |---|---|---|
-| **arXiv** | Papers nuevos del autor | La fuente más fiable |
+| **arXiv** | Artículos nuevos del autor | La fuente más fiable |
 | **OpenAlex / Semantic Scholar** | Publicaciones en revistas y congresos | Cubre lo que no está en arXiv |
 | **Bluesky** | Posts públicos | Cada vez más investigadores publican aquí |
 | **Mastodon** | Posts públicos | Menos gente, pero accesible |
@@ -59,7 +59,7 @@ Elige de 3 a 5 personas cuyo trabajo quieras seguir. Un nombre por línea. Si sa
 - Nombre Apellido — github.com/usuario — tema: sitios de unión
 ```
 
-### 2. Decide dónde guarda los papers
+### 2. Decide dónde guarda los artículos
 
 Lo más sencillo: la subcolección «Novedades semanales» de la colección de tu pregunta, con una etiqueta propia (`seguimiento-autores`) para distinguirlos de los que añade la tarea de actualización.
 
@@ -95,7 +95,7 @@ Eres mi asistente de vigilancia científica. Cada vez que se ejecute esta tarea:
    [tu pregunta y sus temas; p. ej., fiabilidad de AlphaFold en bolsillos de unión].
    Descarta opiniones sueltas, autopromoción y repeticiones.
 
-3. GUARDA EN ZOTERO solo los papers realmente interesantes (como mucho [5]):
+3. GUARDA EN ZOTERO solo los artículos realmente interesantes (como mucho [5]):
    - Añádelos por DOI o por ID de arXiv.
    - Ponlos en «[colección de tu pregunta] › Novedades semanales».
    - Antes de añadir, comprueba que no esté ya en la biblioteca.
@@ -121,7 +121,7 @@ Eres mi asistente de vigilancia científica. Cada vez que se ejecute esta tarea:
 ## Mantenimiento
 
 - **Añadir o quitar investigadores:** pídele a Claude que actualice la tarea con la nueva lista.
-- **Demasiado ruido:** endurece el filtro del paso 2 o baja el máximo de papers.
+- **Demasiado ruido:** endurece el filtro del paso 2 o baja el máximo de artículos.
 - **Revisar lo que ha guardado:** en Zotero, filtra por la etiqueta `seguimiento-autores`.
 - **Pausar o borrar:** pídeselo a Claude o hazlo desde la lista de tareas programadas.
 
@@ -134,5 +134,5 @@ Eres mi asistente de vigilancia científica. Cada vez que se ejecute esta tarea:
 | La tarea no termina | Está esperando una aprobación | Revisa los permisos de la tarea |
 | No aparece nada en Zotero | Ordenador apagado, app de Claude cerrada o Zotero sin sincronizar | Cambia la hora, deja la app abierta o sincroniza Zotero |
 | La nota dice que no hay nada nuevo | Es lo normal muchas semanas | Amplía los días o la lista de autores |
-| Aparecen papers de otra persona | Nombre ambiguo | Añade su perfil o su web a la lista |
-| Papers fuera de tema | Filtro del paso 2 demasiado amplio | Concreta los temas |
+| Aparecen artículos de otra persona | Nombre ambiguo | Añade su perfil o su web a la lista |
+| Artículos fuera de tema | Filtro del paso 2 demasiado amplio | Concreta los temas |

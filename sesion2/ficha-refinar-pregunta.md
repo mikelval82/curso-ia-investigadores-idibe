@@ -63,7 +63,7 @@ digas que no existe.
 
 ### 4. Grill-me: que te interrogue
 
-Este paso usa siempre la skill **grill-me** de Matt Pocock. El cuestionario está en la carpeta `grilling`, que es la que hace el trabajo.
+Este paso usa siempre **grilling**, la skill de Matt Pocock que hace el interrogatorio. Su compañera, grill-me, solo la llama, así que aquí no hace falta.
 
 El ZIP de la sesión 2 ya la trae: abre esa carpeta en Claude (pestaña Code). Si trabajas en otro proyecto, copia en él la carpeta `skills/grilling/`. Después:
 

@@ -19,7 +19,7 @@ Tú revisas «Novedades semanales» cuando te viene bien y mueves a otras subcol
 | **Zotero conectado a Claude (MCP)** | Para guardar los artículos. Quedó instalado en la sesión 1 |
 | **App de escritorio de Claude abierta** | El conector de Zotero se ejecuta dentro de la app. Claude guarda en tu biblioteca en línea y tu Zotero la recibe al sincronizar |
 | **Colección de tu pregunta con su subcolección «Novedades semanales»** | Para que lo nuevo no se mezcle con lo que ya has revisado |
-| **Conectores de búsqueda activos** (PubMed, Europe PMC, bioRxiv…) | Para buscar en las bases y no solo en la web |
+| **Conectores de búsqueda activos** (PubMed, bioRxiv…) | Para buscar en las bases y no solo en la web |
 
 > ⚠️ **Importante:** la tarea se ejecuta con la app de Claude abierta. Si está cerrada o el ordenador apagado a esa hora, se ejecutará cuando vuelvas a abrirla.
 
@@ -30,7 +30,7 @@ Tú revisas «Novedades semanales» cuando te viene bien y mueves a otras subcol
 ## Cómo se configura
 
 1. **Crea la subcolección** «Novedades semanales» dentro de la colección de tu pregunta.
-2. **Copia la plantilla** de abajo y cambia lo que va entre `[corchetes]`. Es lo que va marcado en naranja en la diapositiva.
+2. **Copia la plantilla** de abajo y cambia lo que va entre `[corchetes]`.
 3. **Pídele a Claude que cree la tarea**: *«Crea una tarea programada semanal, los [lunes a las 8:30], con estas instrucciones.»*
 4. **Revisa los permisos.** La tarea se ejecuta cuando no estás delante: si cada paso pide permiso, se quedará parada. Permítele solo lo que necesita (buscar y añadir a Zotero), no borrar ni enviar nada.
 5. **Haz una prueba.** Pídele que la ejecute una vez ahora y comprueba que aparecen artículos en «Novedades semanales» y que te deja el registro.

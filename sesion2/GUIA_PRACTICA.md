@@ -57,7 +57,7 @@ Busca en PubMed, bioRxiv y Europe PMC artículos de [2021] a [2026] sobre
 [tu pregunta].
 
 Añade los relevantes a Zotero, en «[tu colección] › Claude». No borres ni
-cambies nada que ya exista, y reutiliza las fichas que ya estén.
+cambies nada que ya exista, y no dupliques los artículos que ya estén.
 
 Para cada uno, dime dónde lo encontraste, con qué consulta literal y por qué
 lo incluyes. Si una base no te deja buscar por palabras clave, dímelo.
