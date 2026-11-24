@@ -53,7 +53,7 @@ como una posibilidad, no como un hecho, y explica en qué artículos te apoyas.
 ```
 Ahora intenta demostrar que te equivocas: busca artículos que ya respondan a
 eso o que digan lo contrario. Empieza por los de mi colección que no están
-entre los de lectura obligatoria y sigue con [PubMed, Europe PMC y bioRxiv].
+entre los de lectura obligatoria y sigue con [PubMed y bioRxiv].
 
 Dime dónde has buscado y con qué consulta literal. Si no encuentras nada, no
 digas que no existe.

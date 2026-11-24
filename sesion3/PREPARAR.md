@@ -7,7 +7,7 @@ Necesitas **uv**, que ya instalaste en la sesión 1, conexión a internet y unos
 ## 1. Abre una terminal en esta carpeta
 
 - **Windows:** abre la carpeta, haz clic en la barra de direcciones, escribe `powershell` y pulsa Intro.
-- **Mac:** clic derecho en la carpeta → Servicios → Nuevo terminal en la carpeta.
+- **Mac:** clic derecho en la carpeta → Servicios → Nuevo terminal en la carpeta. Si no aparece, abre Terminal, escribe `cd ` (con un espacio), arrastra la carpeta a la ventana y pulsa Intro.
 - **Linux:** clic derecho en la carpeta → Abrir en un terminal.
 
 ## 2. Crea el entorno de Python

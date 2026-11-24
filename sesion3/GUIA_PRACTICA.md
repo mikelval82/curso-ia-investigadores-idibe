@@ -64,7 +64,7 @@ Después enséñame lo que ha cambiado en los números.
 
 ### 1. Exploración
 
-Preguntas para no olvidar: ¿qué falta y por qué?, ¿hay aislados raros o repetidos?, ¿los resistentes se reparten igual entre linajes y años?
+Preguntas para no olvidar: ¿qué falta y por qué?, ¿hay aislados raros o repetidos?, ¿los resistentes se reparten igual entre linajes y años? (En los datos, el linaje es la columna `MLST`.)
 
 ✔ Sabes cuántos aislados tienen resultado para ciprofloxacino y cuántos son resistentes.
 
@@ -75,6 +75,8 @@ Preguntas para no olvidar: ¿qué falta y por qué?, ¿hay aislados raros o repe
 ✔ Sabes cuántas filas y cuántos genes quedan.
 
 ### 3. Entrenar y validar
+
+Si quieres poner a prueba tu plan antes de entrenar, escribe `/grill-me` y cuéntale qué vas a hacer. Es opcional.
 
 ¿Con quién pruebas el modelo: con aislados al azar o con linajes que no ha visto? ¿Das más peso a los resistentes? ¿A todos los modelos igual?
 
@@ -97,7 +99,7 @@ con los dos resultados, uno al lado del otro.
 
 ---
 
-## Qué entregas
+## Cierre: qué entregas
 
 1. Tu `CLAUDE.md`, con las reglas que has añadido.
 2. [DECISIONES.md](DECISIONES.md) completo.
