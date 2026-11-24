@@ -2,18 +2,18 @@
 
 **Objetivo.** Dirigir un análisis por fases: Claude propone y programa; tú decides y lo dejas escrito.
 
-La pregunta es la misma para todos: **¿se puede predecir la resistencia a ciprofloxacino de *E. coli* a partir de sus genes accesorios?** Trabaja por parejas si puedes. Los tiempos son orientativos.
+La pregunta es la misma para todos: **¿qué genes de los islotes pancreáticos se asocian con la HbA1c, y siguen asociados cuando se tienen en cuenta la edad, el IMC y el sexo?** Los datos son públicos: la expresión génica de los islotes de 63 donantes, con y sin diabetes tipo 2. Tras la preparación, `datos/LEEME.md` los describe. Trabaja por parejas si puedes. Los tiempos son orientativos.
 
 | Fase | Tiempo |
 |---|---|
 | Antes de empezar | 5 min |
 | 1. Exploración | 8 min |
 | 2. Preprocesado | 8 min |
-| 3. Entrenar y validar | 12 min |
+| 3. Comparar y ajustar | 12 min |
 | 4. Evaluar | 8 min |
 | Cierre | 4 min |
 
-> ⚠️ Son datos públicos. Con los tuyos, no subas datos de pacientes ni resultados sin publicar sin saber bajo qué condiciones.
+> ⚠️ Son datos públicos. Con los tuyos, mira antes la ficha [¿Qué datos puedo usar?](https://github.com/mikelval82/curso-ia-investigadores-idibe/blob/main/sesion1/QUE_DATOS_PUEDO_USAR.md).
 
 ---
 
@@ -24,17 +24,18 @@ La pregunta es la misma para todos: **¿se puede predecir la resistencia a cipro
 - [ ] Has leído [CLAUDE.md](CLAUDE.md): son seis reglas. Añade las que hemos visto en clase:
 
 ```
-- Di cuántas filas quedan tras cada paso y por qué.
-- Informa siempre de cuántos resistentes se detectan.
-- Compara con usar solo el linaje.
-- Trata igual a todos los modelos que compares.
+- Di cuántos donantes y cuántas sondas quedan tras cada paso y por qué.
+- Con cada umbral, di cuántos genes saldrían solo por azar.
+- Da siempre el resultado con y sin tener en cuenta edad, IMC y sexo.
+- Comprueba un gen conocido de las células beta antes de dar un resultado.
 - No llames causa a una asociación.
 ```
 
 Empieza con esto:
 
 ```
-Lee CLAUDE.md y dime en pocas líneas qué reglas vas a seguir. No hagas nada más.
+Lee CLAUDE.md y datos/LEEME.md y dime en pocas líneas qué reglas vas a seguir
+y qué datos hay. No hagas nada más.
 ```
 
 ✔ Las repite bien. Si no las menciona todas, pídele que vuelva a leer el archivo.
@@ -64,29 +65,29 @@ Después enséñame lo que ha cambiado en los números.
 
 ### 1. Exploración
 
-Preguntas para no olvidar: ¿qué falta y por qué?, ¿hay aislados raros o repetidos?, ¿los resistentes se reparten igual entre linajes y años? (En los datos, el linaje es la columna `MLST`.)
+Preguntas para no olvidar: ¿a quién le falta la HbA1c?, ¿hay donantes «sin diabetes» con una HbA1c de diabetes (6,5 % o más)?, ¿se parecen los dos grupos en edad, IMC y sexo?
 
-✔ Sabes cuántos aislados tienen resultado para ciprofloxacino y cuántos son resistentes.
+✔ Sabes cuántos donantes tienen HbA1c y cuántos tienen diabetes.
 
 ### 2. Preprocesado
 
-¿Qué genes descartas y con qué criterio? ¿Antes o después de separar los datos? ¿Qué haces con los aislados sin linaje?
+¿Qué haces con los donantes sin HbA1c? ¿Quitas las sondas que apenas se expresan? ¿Y las que no tienen gen o tienen varios?
 
-✔ Sabes cuántas filas y cuántos genes quedan.
+✔ Sabes cuántos donantes y cuántas sondas quedan.
 
-### 3. Entrenar y validar
+### 3. Comparar y ajustar
 
-Si quieres poner a prueba tu plan antes de entrenar, escribe `/grilling` y cuéntale qué vas a hacer. Es opcional.
+Si quieres poner a prueba tu plan antes de calcular, escribe `/grilling` y cuéntale qué vas a hacer. Es opcional.
 
-¿Con quién pruebas el modelo: con aislados al azar o con linajes que no ha visto? ¿Das más peso a los resistentes? ¿A todos los modelos igual?
+¿Comparas «con diabetes» frente a «sin diabetes», o usas la HbA1c como un número? ¿Tienes en cuenta la edad, el IMC y el sexo?
 
-✔ Tienes el resultado de **dos** formas de separar los datos.
+✔ Tienes el resultado de **dos** formas: comparando los dos grupos y usando la HbA1c.
 
 ### 4. Evaluar
 
-¿Qué error te importa más: dejar escapar un resistente o dar por resistente uno que no lo es? ¿Con qué lo comparas?
+¿Qué umbral usas para decir que un gen «sale»? ¿Cuántos saldrían por azar? ¿Va en la dirección esperada un gen conocido de las células beta, como `PDX1` o `SLC2A2`? ¿Se parece a lo publicado?
 
-✔ Tienes el acierto, los resistentes detectados y lo que se consigue sabiendo solo el linaje.
+✔ Sabes cuántos genes salen, cuántos esperarías por azar y si el gen conocido se comporta como se espera.
 
 Y una comprobación final:
 
@@ -112,6 +113,7 @@ con los dos resultados, uno al lado del otro.
 |---|---|
 | Claude sigue a la fase siguiente | «Para. Estamos en la fase de…» y apúntalo: también es información |
 | No encuentra Python o una librería | Pídele que use `.venv`. Si no está, vuelve a PREPARAR.md |
-| Tarda mucho | Pídele menos genes o menos árboles y anótalo como decisión |
-| Da muchas cifras y no las entiendes | «Explícamelo con cien aislados: ¿cuántos resistentes encuentra y cuántos se le escapan?» |
+| Tarda mucho | Pídele que pruebe primero con 1.000 sondas y anótalo como decisión |
+| Da muchas cifras y no las entiendes | «Explícamelo con un solo gen: ¿sube o baja con la HbA1c, y cuánto?» |
+| Dice que un gen «causa» la diabetes | Recuérdale la regla: con estos datos solo se ve una asociación |
 | Dos parejas tienen resultados distintos | Comparad vuestros DECISIONES.md: ahí está la explicación |

@@ -2,7 +2,7 @@
 
 Objetivo: llegar al 16 de diciembre con Python y los datos listos. Unos 15 minutos, la mayor parte descargando. **Hazlo en casa:** en clase no habrá tiempo.
 
-Necesitas **uv**, que ya instalaste en la sesión 1, conexión a internet y unos 2 GB libres.
+Necesitas **uv**, que ya instalaste en la sesión 1, conexión a internet y 1 GB libre.
 
 ## 1. Abre una terminal en esta carpeta
 
@@ -27,18 +27,17 @@ uv pip install -r requirements.txt
 uv run --no-project preparar.py
 ```
 
-✔ Termina con **«Todo listo para la sesión 3»**. Descarga unos 70 MB.
+✔ Termina con **«Todo listo para la sesión 3»**. Descarga unos 10 MB y deja en `datos/` tres tablas y un `LEEME.md` que las describe.
 
 ## De dónde salen los datos
 
-Son de [Moradigaravand y colaboradores (2018)](https://doi.org/10.1371/journal.pcbi.1006258), en la versión del tutorial de [Orcales y colaboradores (2024)](https://doi.org/10.1371/journal.pcbi.1012579). Se descargan de [su repositorio](https://github.com/Lucy-Moctezuma/ML-Tutorial-for-Antibiotic-Resistance-Predictions-for-E.-Coli): no declara licencia, así que aquí no repartimos copias. Cita los dos artículos si los usas.
+Expresión génica de islotes pancreáticos de 63 donantes fallecidos, 54 sin diabetes y 9 con diabetes tipo 2, del Nordic Islet Transplantation Programme. Los publicaron [Taneera y colaboradores (2012)](https://doi.org/10.1016/j.cmet.2012.06.006) y están en GEO con el código [GSE38642](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE38642). El programa los descarga de GEO y comprueba que el archivo es el mismo que usa el curso. Cita el artículo si los usas.
 
 ## Si algo falla
 
 | Síntoma | Qué hacer |
 |---|---|
 | `uv` no se reconoce | Cierra la terminal y ábrela de nuevo. Si sigue, repite el paso de uv de la receta de la sesión 1 |
-| No se puede descargar | Prueba con otra red: algunas bloquean GitHub |
+| No se puede descargar | Prueba con otra red o más tarde: a veces GEO no responde |
 | «no coincide con el que usa el curso» | Avisa al docente: el archivo ha cambiado |
-| En Mac, error de `libomp` al usar xgboost | Puedes seguir sin xgboost: díselo a Claude y anótalo como decisión |
 | El ordenador va muy lento | Sigue igualmente; en clase se puede trabajar por parejas |

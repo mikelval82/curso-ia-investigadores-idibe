@@ -1,6 +1,6 @@
 # Registro de decisiones
 
-**Pregunta:** ¿se puede predecir la resistencia a ciprofloxacino a partir de los genes accesorios?
+**Pregunta:** ¿qué genes de los islotes se asocian con la HbA1c, y siguen asociados cuando se tienen en cuenta la edad, el IMC y el sexo?
 
 Una fila por decisión. Lo importante es la última columna: si no sabes explicarla, todavía no es tuya.
 
@@ -8,7 +8,7 @@ Una fila por decisión. Lo importante es la última columna: si no sabes explica
 |---|---|---|---|---|
 | Exploración | | | | |
 | Preprocesado | | | | |
-| Entrenar y validar | | | | |
+| Comparar y ajustar | | | | |
 | Evaluar | | | | |
 
 ## Mi resultado, en una frase
