@@ -13,7 +13,7 @@ Aquí está el material de las prácticas. Trabajas con tu propia pregunta y tu 
 | **3 · Analizar datos sin perder el control** · 16 de diciembre | [Descarga la carpeta](descargas/SESION_03.zip) y sigue [PREPARAR](sesion3/PREPARAR.md): en clase no habrá tiempo | La [guía](sesion3/GUIA_PRACTICA.md) |
 | **4 · Escritura y tareas programadas** · 18 de diciembre | [Descarga la carpeta](descargas/SESION_04.zip) e [instala TheAIWriter](sesion4/INSTALAR_THEAIWRITER.md) | La [guía](sesion4/GUIA_PRACTICA.md) |
 
-**Cómo usar las carpetas:** descarga el ZIP, extráelo y abre la carpeta en la pestaña **Code** de Claude. Desde GitHub puedes leerlo todo, pero las prácticas se hacen con el ZIP, que trae también las skills.
+**Cómo usar las carpetas:** descarga el ZIP, extráelo y abre la carpeta en la pestaña **Code** de Claude. Desde GitHub puedes leerlo todo, pero las prácticas se hacen con el ZIP, que trae también las skills. **Descarga el ZIP de cada sesión la semana en que se imparte:** puede haber cambiado.
 
 ## Reglas del curso
 
