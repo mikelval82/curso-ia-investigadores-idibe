@@ -46,8 +46,8 @@ Eres mi asistente de actualización bibliográfica. Cada vez que se ejecute esta
    [¿Podemos fiarnos de AlphaFold en los bolsillos de unión de ligandos?]
 
 2. BUSCA artículos publicados en los últimos [7] días en:
-   [PubMed, Europe PMC y bioRxiv].
-   Usa esta consulta como punto de partida. Está escrita para Europe PMC y busca
+   [PubMed y bioRxiv].
+   Usa como punto de partida esta consulta, la misma que usé en Europe PMC. Busca
    solo en título y resumen; adáptala a cada fuente sin ampliarla al texto completo:
    [TITLE_ABS:(AlphaFold OR "AlphaFold2") AND TITLE_ABS:(pLDDT OR confidence)
     AND TITLE_ABS:("binding site" OR pocket)]

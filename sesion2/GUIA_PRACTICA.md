@@ -53,7 +53,7 @@ En Zotero, crea una colección con el nombre corto de tu pregunta y, dentro, est
 ### 3. La misma pregunta, desde Claude
 
 ```
-Busca en PubMed, bioRxiv y Europe PMC artículos de [2021] a [2026] sobre
+Busca en PubMed y bioRxiv artículos de [2021] a [2026] sobre
 [tu pregunta].
 
 Añade los relevantes a Zotero, en «[tu colección] › Claude». No borres ni
