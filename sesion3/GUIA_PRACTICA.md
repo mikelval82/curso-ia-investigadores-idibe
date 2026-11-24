@@ -76,7 +76,7 @@ Preguntas para no olvidar: ¿qué falta y por qué?, ¿hay aislados raros o repe
 
 ### 3. Entrenar y validar
 
-Si quieres poner a prueba tu plan antes de entrenar, escribe `/grill-me` y cuéntale qué vas a hacer. Es opcional.
+Si quieres poner a prueba tu plan antes de entrenar, escribe `/grilling` y cuéntale qué vas a hacer. Es opcional.
 
 ¿Con quién pruebas el modelo: con aislados al azar o con linajes que no ha visto? ¿Das más peso a los resistentes? ¿A todos los modelos igual?
 

@@ -15,7 +15,7 @@ mi-proyecto/
 │   └── DECISIONES.md    Qué se ha hecho y qué has decidido
 ├── datos/           Tus datos originales
 ├── analisis/        El código y sus resultados
-└── .claude/skills/  grill-me y grilling
+└── .claude/skills/  grilling
 ```
 
 `.claude` es una carpeta oculta. Si no la ves, en VS Code aparece en la lista de archivos.
@@ -36,11 +36,11 @@ mi-proyecto/
 
 ## Poner a prueba tu plan
 
-Escribe `/grill-me` y cuéntale qué quieres hacer. Te preguntará hasta que quede claro.
+Escribe `/grilling` y cuéntale qué quieres hacer. Te preguntará hasta que quede claro.
 
-Con Codex, `/grill-me` no aparece. Pídele: «Lee `.claude/skills/grilling/SKILL.md` y aplícalo a mi plan».
+Con Codex, `/grilling` no aparece. Pídele: «Lee `.claude/skills/grilling/SKILL.md` y aplícalo a mi plan».
 
-Las dos skills son de [Matt Pocock](https://github.com/mattpocock/skills), sin modificar. Son archivos de texto: ábrelos y cámbialos si quieres que pregunten de otra forma. Conserva su `LICENSE.txt`.
+La skill es de [Matt Pocock](https://github.com/mattpocock/skills), sin modificar. Es un archivo de texto: ábrelo y cámbialo si quieres que pregunte de otra forma. Conserva su `LICENSE.txt`.
 
 ## Retomar otro día
 

@@ -61,9 +61,9 @@ digas que no existe.
 
 **Si encuentra algo, vuelve al paso 2** con esa información. En el caso de AlphaFold pasó: un artículo que había quedado fuera de los cinco cambió la pregunta.
 
-### 4. Grill-me: que te interrogue
+### 4. Grilling: que te interrogue
 
-Este paso usa siempre **grilling**, la skill de Matt Pocock que hace el interrogatorio. Su compañera, grill-me, solo la llama, así que aquí no hace falta.
+Este paso usa **grilling**, la skill de Matt Pocock que hace el interrogatorio.
 
 El ZIP de la sesión 2 ya la trae: abre esa carpeta en Claude (pestaña Code). Si trabajas en otro proyecto, copia en él la carpeta `skills/grilling/`. Después:
 

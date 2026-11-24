@@ -23,11 +23,11 @@ Aquí está el material de las prácticas. Trabajas con tu propia pregunta y tu 
 
 ## Para tu propio proyecto
 
-[Plantilla básica](plantilla/README.md) ([descargar](descargas/PLANTILLA.zip)): contexto, datos, análisis y grill-me, lista para abrir en VS Code o en Claude. Es opcional y está pensada para que la cambies.
+[Plantilla básica](plantilla/README.md) ([descargar](descargas/PLANTILLA.zip)): contexto, datos, análisis y grilling, lista para abrir en VS Code o en Claude. Es opcional y está pensada para que la cambies.
 
 ## Skills
 
-[grill-me y grilling](skills/README.md): te interrogan sobre un plan hasta aclararlo. Puedes modificarlas.
+[grilling](skills/README.md): te interroga sobre un plan hasta aclararlo. Puedes modificarla.
 
 ## Licencia
 

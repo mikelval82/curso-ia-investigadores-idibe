@@ -1,16 +1,16 @@
-# grill-me y grilling
+# grilling
 
-Son de [Matt Pocock](https://github.com/mattpocock/skills), versión 1.2.3, sin modificar y con su licencia MIT. Sirven para poner a prueba un plan, una decisión o una idea: Claude te pregunta hasta que queda claro. `grill-me` solo llama a `grilling`, así que hacen falta las dos.
+Es de [Matt Pocock](https://github.com/mattpocock/skills), versión 1.2.3, sin modificar y con su licencia MIT. Sirve para poner a prueba un plan, una decisión o una idea: Claude te pregunta hasta que queda claro.
 
-## Usarlas
+## Usarla
 
-- **En una práctica:** la sesión 2 trae solo grilling, en `skills/grilling/`, que se lee directamente. La sesión 3 y la [plantilla](../plantilla/README.md) traen las dos en `.claude/skills/`, para usar `/grill-me`.
-- **En otro proyecto con Claude Code:** copia las dos carpetas en `.claude/skills/` y escribe `/grill-me`.
-- **Con Codex:** `/grill-me` no aparece. Pídele: «Lee `.claude/skills/grilling/SKILL.md` y aplícalo a mi plan».
+- **En una práctica:** la sesión 2 la trae en `skills/grilling/`, y allí se le pide a Claude que la lea. La sesión 3 y la [plantilla](../plantilla/README.md) la traen en `.claude/skills/grilling/`, para usar `/grilling`.
+- **En otro proyecto con Claude Code:** copia la carpeta en `.claude/skills/` y escribe `/grilling`.
+- **Con Codex:** `/grilling` no aparece. Pídele: «Lee `.claude/skills/grilling/SKILL.md` y aplícalo a mi plan».
 
-## Modificarlas
+## Modificarla
 
-Una skill es un archivo de texto, `SKILL.md`. Ábrelo, cambia lo que quieras y prueba otra vez. Por ejemplo, en `grilling/SKILL.md`:
+Una skill es un archivo de texto, `SKILL.md`. Ábrelo, cambia lo que quieras y prueba otra vez. Por ejemplo:
 
 | Original | La tuya |
 |---|---|
