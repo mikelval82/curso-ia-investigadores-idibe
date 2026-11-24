@@ -20,6 +20,8 @@ De la [receta de la sesión 1](https://github.com/mikelval82/curso-ia-investigad
 - [ ] **Zotero de escritorio** en este mismo ordenador.
 - [ ] **uv**.
 
+Y además **Git**: compruébalo con `git --version` en una terminal. Si no lo tienes, instálalo desde [git-scm.com](https://git-scm.com/downloads).
+
 Necesitas además internet y espacio para el modelo de búsqueda, que ocupa unos cientos de MB.
 
 ## 1. Pon los PDF en Zotero

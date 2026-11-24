@@ -39,15 +39,7 @@ En los permisos del conector, desactiva las herramientas de **enviar, responder,
 
 ---
 
-## Paso 1 · Crea la tarea
-
-Pega las instrucciones del paso 2 y pide:
-
-> «Crea una tarea programada, de lunes a viernes a las 9:00, 13:00 y 17:00, con estas instrucciones.»
-
-La tarea local necesita la app abierta y el ordenador encendido.
-
-## Paso 2 · Las instrucciones
+## Paso 1 · Las instrucciones
 
 Copia, cambia lo que va entre `[corchetes]` y dáselo a Claude. Cada ejecución empieza de cero.
 
@@ -85,6 +77,14 @@ Termina con un resumen aquí, en la conversación, sin copiar datos
 personales: cuántos has revisado, cuáles son a mano y por qué, y cuántos
 borradores has dejado.
 ```
+
+## Paso 2 · Crea la tarea
+
+Pega las instrucciones del paso 1 y pide:
+
+> «Crea una tarea programada, de lunes a viernes a las 9:00, 13:00 y 17:00, con estas instrucciones.»
+
+La tarea local necesita la app abierta y el ordenador encendido.
 
 ## Paso 3 · Pruébala
 

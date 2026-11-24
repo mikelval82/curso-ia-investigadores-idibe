@@ -224,8 +224,6 @@ página, el pasaje literal y el motivo. No cambies ningún archivo.
 
 Aquí no hay programa que confirme que las citas existen ni que los pasajes son literales: por eso **busca tú cada pasaje literal en el PDF**, al menos en tus tres frases. Sigue el paso 7 desde «Abre el PDF», corrige el texto a mano y escribe tu declaración (paso 9).
 
-Si tienes la skill `bibliografia-con-evidencia`, en el paso 4 añade «lee y aplica su `SKILL.md`».
-
 **5. El radar.** Las instrucciones de la [ficha](ficha-radar.md) se pueden pegar también en Codex. Su [documentación](https://learn.chatgpt.com/docs/automations) (22/11/2026) dice que admite tareas programadas y que, si usan archivos locales, la app y el ordenador tienen que estar encendidos. **No lo hemos probado:** si no te funciona, entrega la ejecución a mano.
 
 ---
