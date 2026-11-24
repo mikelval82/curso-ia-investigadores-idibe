@@ -4,8 +4,9 @@ Son de [Matt Pocock](https://github.com/mattpocock/skills), versión 1.2.3, sin 
 
 ## Usarlas
 
-- **En una práctica:** los ZIP de las sesiones 2 y 3 y la [plantilla](../plantilla/README.md) ya las traen donde hacen falta.
+- **En una práctica:** la sesión 2 trae solo grilling, en `skills/grilling/`, que se lee directamente. La sesión 3 y la [plantilla](../plantilla/README.md) traen las dos en `.claude/skills/`, para usar `/grill-me`.
 - **En otro proyecto con Claude Code:** copia las dos carpetas en `.claude/skills/` y escribe `/grill-me`.
+- **Con Codex:** `/grill-me` no aparece. Pídele: «Lee `.claude/skills/grilling/SKILL.md` y aplícalo a mi plan».
 
 ## Modificarlas
 

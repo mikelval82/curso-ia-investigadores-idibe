@@ -38,6 +38,8 @@ mi-proyecto/
 
 Escribe `/grill-me` y cuéntale qué quieres hacer. Te preguntará hasta que quede claro.
 
+Con Codex, `/grill-me` no aparece. Pídele: «Lee `.claude/skills/grilling/SKILL.md` y aplícalo a mi plan».
+
 Las dos skills son de [Matt Pocock](https://github.com/mattpocock/skills), sin modificar. Son archivos de texto: ábrelos y cámbialos si quieres que pregunten de otra forma. Conserva su `LICENSE.txt`.
 
 ## Retomar otro día
