@@ -7,3 +7,6 @@ sesion3/analisis/
 Thumbs.db
 .env
 .env.*
+
+# Presentaciones del docente: solo en local, nunca en GitHub
+presentaciones/
