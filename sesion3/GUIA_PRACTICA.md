@@ -2,18 +2,18 @@
 
 **Objetivo.** Dirigir un análisis por fases: Claude propone y programa; tú decides y lo dejas escrito.
 
-La pregunta es la misma para todos: **¿qué genes de los islotes pancreáticos se asocian con la HbA1c, y siguen asociados cuando se tienen en cuenta la edad, el IMC y el sexo?** Los datos son públicos: la expresión génica de los islotes de 63 donantes, con y sin diabetes tipo 2. Tras la preparación, `datos/LEEME.md` los describe. Trabaja por parejas si puedes. Los tiempos son orientativos.
+La pregunta es la misma que en las sesiones 2 y 4: **¿la confianza de AlphaFold en el bolsillo avisa de si el docking va a funcionar?** Hoy trabajas sobre la primera mitad: ¿avisa al menos de si el bolsillo está bien predicho? Los datos son el resultado ya calculado del análisis del curso, y están en `datos/`; `datos/LEEME.md` los describe. Trabaja por parejas si puedes. Los tiempos son orientativos.
 
 | Fase | Tiempo |
 |---|---|
 | Antes de empezar | 5 min |
 | 1. Exploración | 8 min |
-| 2. Preprocesado | 8 min |
-| 3. Comparar y ajustar | 12 min |
-| 4. Evaluar | 8 min |
+| 2. Preparar | 8 min |
+| 3. Medir | 12 min |
+| 4. Poner a prueba | 8 min |
 | Cierre | 4 min |
 
-> ⚠️ Son datos públicos. Con los tuyos, mira antes la ficha [¿Qué datos puedo usar?](https://github.com/mikelval82/curso-ia-investigadores-idibe/blob/main/sesion1/QUE_DATOS_PUEDO_USAR.md).
+> ⚠️ Son datos públicos y ya calculados: no se vuelve a ejecutar el análisis. Con los tuyos, mira antes la ficha [¿Qué datos puedo usar?](https://github.com/mikelval82/curso-ia-investigadores-idibe/blob/main/sesion1/QUE_DATOS_PUEDO_USAR.md).
 
 ---
 
@@ -24,11 +24,11 @@ La pregunta es la misma para todos: **¿qué genes de los islotes pancreáticos 
 - [ ] Has leído [CLAUDE.md](CLAUDE.md): son seis reglas. Añade las que hemos visto en clase:
 
 ```
-- Di cuántos donantes y cuántas sondas quedan tras cada paso y por qué.
-- Con cada umbral, di cuántos genes saldrían solo por azar.
-- Da siempre el resultado con y sin tener en cuenta edad, IMC y sexo.
-- Comprueba un gen conocido de las células beta antes de dar un resultado.
-- No llames causa a una asociación.
+- Di cuántas filas quedan tras cada paso y por qué.
+- Di siempre con cuántos complejos y cuántas proteínas se ha calculado.
+- Da cada correlación con su p y su n.
+- Antes de concluir, enséñame la figura con los puntos.
+- No llames predicción a una correlación.
 ```
 
 Empieza con esto:
@@ -38,7 +38,7 @@ Lee CLAUDE.md y datos/LEEME.md y dime en pocas líneas qué reglas vas a seguir
 y qué datos hay. No hagas nada más.
 ```
 
-✔ Las repite bien. Si no las menciona todas, pídele que vuelva a leer el archivo.
+✔ Las repite bien y sabe qué es un bolsillo, un pLDDT y un RMSD. Si no las menciona todas, pídele que vuelva a leer el archivo.
 
 ---
 
@@ -65,38 +65,38 @@ Después enséñame lo que ha cambiado en los números.
 
 ### 1. Exploración
 
-Preguntas para no olvidar: ¿a quién le falta la HbA1c?, ¿hay donantes «sin diabetes» con una HbA1c de diabetes (6,5 % o más)?, ¿se parecen los dos grupos en edad, IMC y sexo?
+Preguntas para no olvidar: ¿cuántas filas tiene la tabla y cuántas sirven?, ¿qué dice la columna `estado` de las que no sirven?, ¿aparece alguna proteína (`uniprot`) más de una vez?, ¿hay bolsillos de confianza baja?
 
-✔ Sabes cuántos donantes tienen HbA1c y cuántos tienen diabetes.
+✔ Sabes cuántos complejos hay, cuántos se caen y por qué.
 
-### 2. Preprocesado
+### 2. Preparar
 
-¿Qué haces con los donantes sin HbA1c? ¿Quitas las sondas que apenas se expresan? ¿Y las que no tienen gen o tienen varios?
+¿Te quedas solo con las filas `ok`? ¿Filtras también por `identidad_bolsillo`? ¿Dejas una fila por proteína o todas? ¿Qué columna mide «lo bien hecho que está el bolsillo»: `rmsd_ca_bolsillo` o `rmsd_atomos_bolsillo`?
 
-✔ Sabes cuántos donantes y cuántas sondas quedan.
+✔ Sabes con cuántos complejos y cuántas proteínas te has quedado, y por qué.
 
-### 3. Comparar y ajustar
+### 3. Medir
 
 Si quieres poner a prueba tu plan antes de calcular, escribe `/grilling` y cuéntale qué vas a hacer. Es opcional.
 
-¿Comparas «con diabetes» frente a «sin diabetes», o usas la HbA1c como un número? ¿Tienes en cuenta la edad, el IMC y el sexo?
+¿Spearman o Pearson? ¿Una sola correlación, o además la figura y los grupos por tramos de confianza (menos de 90, 90 o más)?
 
-✔ Tienes el resultado de **dos** formas: comparando los dos grupos y usando la HbA1c.
+✔ Tienes la correlación **con su p y su n**, y una figura con los puntos que entiendes.
 
-### 4. Evaluar
+### 4. Poner a prueba
 
-¿Qué umbral usas para decir que un gen «sale»? ¿Cuántos saldrían por azar? ¿Va en la dirección esperada un gen conocido de las células beta, como `PDX1` o `SLC2A2`? ¿Se parece a lo publicado?
-
-✔ Sabes cuántos genes salen, cuántos esperarías por azar y si el gen conocido se comporta como se espera.
+¿Qué pasa si cambias una decisión de la fase 2? ¿Cuántos bolsillos de confianza alta salen mal de todas formas? ¿Hay alguna proteína que se repita y dé resultados muy distintos?
 
 Y una comprobación final:
 
 ```
-Cambia una sola decisión razonable de la fase 3 y repite. Enséñame la tabla
-con los dos resultados, uno al lado del otro.
+Cambia una sola decisión razonable de la fase 2 o la 3 y repite. Enséñame la
+tabla con los dos resultados, uno al lado del otro.
 ```
 
-✔ Has visto si la conclusión aguanta el cambio.
+✔ Has visto si la conclusión aguanta el cambio, y sabes a qué casos no se les aplica.
+
+> Si te sobra tiempo: `docking_caja_ajustada.csv` tiene los 90 complejos en los que además se probó el docking, con `acierta_af` y `acierta_exp`. Es la segunda mitad de la pregunta, y la que cambia la respuesta.
 
 ---
 
@@ -113,7 +113,7 @@ con los dos resultados, uno al lado del otro.
 |---|---|
 | Claude sigue a la fase siguiente | «Para. Estamos en la fase de…» y apúntalo: también es información |
 | No encuentra Python o una librería | Pídele que use `.venv`. Si no está, vuelve a PREPARAR.md |
-| Tarda mucho | Pídele que pruebe primero con 1.000 sondas y anótalo como decisión |
-| Da muchas cifras y no las entiendes | «Explícamelo con un solo gen: ¿sube o baja con la HbA1c, y cuánto?» |
-| Dice que un gen «causa» la diabetes | Recuérdale la regla: con estos datos solo se ve una asociación |
+| Da una correlación y nada más | «¿Con cuántos complejos? ¿Y la p? Enséñame la figura» |
+| Usa las 428 filas sin mirar `estado` | Es una decisión que no ha contado: pídele que la anote en DECISIONES.md |
+| Dice que la confianza «predice» el acierto | Recuérdale la regla: con estos datos solo hay una correlación |
 | Dos parejas tienen resultados distintos | Comparad vuestros DECISIONES.md: ahí está la explicación |

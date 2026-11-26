@@ -1,8 +1,8 @@
 # Sesión 3 · Prepara tu ordenador antes de venir
 
-Objetivo: llegar al 16 de diciembre con Python y los datos listos. Unos 15 minutos, la mayor parte descargando. **Hazlo en casa:** en clase no habrá tiempo.
+Objetivo: llegar al 16 de diciembre con Python listo. Unos 5 minutos. **Hazlo en casa:** en clase no habrá tiempo.
 
-Necesitas **uv**, que ya instalaste en la sesión 1, conexión a internet y 1 GB libre.
+Necesitas **uv**, que ya instalaste en la sesión 1. Los datos vienen dentro de esta carpeta: no hay que descargar nada.
 
 ## 1. Abre una terminal en esta carpeta
 
@@ -21,23 +21,29 @@ uv pip install -r requirements.txt
 
 ✔ Aparece una carpeta `.venv`. No modifica el Python de tu ordenador.
 
-## 3. Descarga los datos y comprueba todo
+## 3. Comprueba que todo funciona
 
 ```
 uv run --no-project preparar.py
 ```
 
-✔ Termina con **«Todo listo para la sesión 3»**. Descarga unos 10 MB y deja en `datos/` tres tablas y un `LEEME.md` que las describe.
+✔ Termina con **«Todo listo para la sesión 3»** y deja una figura, `prueba_instalacion.png`. Ábrela: si se ve, matplotlib funciona. Puedes borrarla.
 
-## De dónde salen los datos
+## Qué hay en datos/
 
-Expresión génica de islotes pancreáticos de 63 donantes fallecidos, 54 sin diabetes y 9 con diabetes tipo 2, del Nordic Islet Transplantation Programme. Los publicaron [Taneera y colaboradores (2012)](https://doi.org/10.1016/j.cmet.2012.06.006) y están en GEO con el código [GSE38642](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE38642). El programa los descarga de GEO y comprueba que el archivo es el mismo que usa el curso. Cita el artículo si los usas.
+Dos tablas con los resultados ya calculados del análisis del curso sobre AlphaFold:
+
+- `bolsillos.csv`: una fila por complejo proteína-ligando, con la confianza de AlphaFold en el bolsillo y lo que se parece al bolsillo medido en el laboratorio.
+- `docking_caja_ajustada.csv`: los 90 complejos en los que además se probó el docking.
+- `LEEME.md`: qué es cada columna, de dónde salen los datos y qué no pueden decir. Léelo antes de clase, son dos páginas.
+
+Los datos originales son públicos: PoseBusters (Buttenschoen et al., *Chemical Science* 2024) y los modelos de AlphaFold DB. En clase no se vuelve a ejecutar el análisis: se trabaja sobre estas tablas.
 
 ## Si algo falla
 
 | Síntoma | Qué hacer |
 |---|---|
 | `uv` no se reconoce | Cierra la terminal y ábrela de nuevo. Si sigue, repite el paso de uv de la receta de la sesión 1 |
-| No se puede descargar | Prueba con otra red o más tarde: a veces GEO no responde |
-| «no coincide con el que usa el curso» | Avisa al docente: el archivo ha cambiado |
+| «Falta datos/…» | Vuelve a descomprimir el ZIP entero, sin sacar los archivos de su carpeta |
+| «no coincide con el que usa el curso» | Descomprime otra vez el ZIP; si sigue, avisa al docente |
 | El ordenador va muy lento | Sigue igualmente; en clase se puede trabajar por parejas |
