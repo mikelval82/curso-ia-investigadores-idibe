@@ -1,0 +1,188 @@
+{
+ "consultas": [
+  {
+   "consulta": "pLDDT confidence does not predict docking success correlation",
+   "pasajes": [
+    "holcomb2023evaluation#12",
+    "holcomb2023evaluation#6",
+    "holcomb2023evaluation#9",
+    "holcomb2023evaluation#15",
+    "holcomb2023evaluation#5",
+    "holcomb2023evaluation#13",
+    "holcomb2023evaluation#8",
+    "holcomb2023evaluation#16"
+   ]
+  },
+  {
+   "consulta": "docking success rate percentage AlphaFold models RMSD below 2 A compared to crystal structures",
+   "pasajes": [
+    "holcomb2023evaluation#5",
+    "holcomb2023evaluation#13",
+    "lee2023evaluating#22",
+    "karelina2023accurately#20",
+    "feidakis2026tale#31",
+    "lee2023evaluating#12",
+    "scardino2023good#12",
+    "feidakis2026tale#54",
+    "scardino2023good#20",
+    "skrinjar2026evaluating#34",
+    "diazrovira2023deep#9",
+    "bekarcesaretli2024conservation#2"
+   ]
+  },
+  {
+   "consulta": "AlphaFold predicted structures virtual screening pocket side chain accuracy limits drug discovery",
+   "pasajes": [
+    "scardino2023good#1",
+    "scardino2023good#5",
+    "bekarcesaretli2024conservation#40",
+    "lee2023evaluating#17",
+    "diazrovira2023deep#1",
+    "lee2023evaluating#16",
+    "buttenschoenPoseBustersAIbasedDocking2024#3",
+    "holcomb2023evaluation#8",
+    "karelina2023accurately#1",
+    "diazrovira2023deep#21",
+    "holcomb2023evaluation#2",
+    "feidakis2026tale#2"
+   ]
+  },
+  {
+   "consulta": "search box size grid dimensions docking exhaustiveness effect on accuracy",
+   "pasajes": [
+    "diazrovira2023deep#6",
+    "feidakis2026tale#54",
+    "scardino2023good#29",
+    "karelina2023accurately#21",
+    "skrinjar2026evaluating#27",
+    "feidakis2026tale#57",
+    "diazrovira2023deep#13",
+    "lee2023evaluating#30"
+   ]
+  },
+  {
+   "consulta": "PoseBusters benchmark set 428 complexes released since 2021 dataset construction",
+   "pasajes": [
+    "buttenschoenPoseBustersAIbasedDocking2024#18",
+    "buttenschoenPoseBustersAIbasedDocking2024#7",
+    "buttenschoenPoseBustersAIbasedDocking2024#27",
+    "buttenschoenPoseBustersAIbasedDocking2024#22",
+    "buttenschoenPoseBustersAIbasedDocking2024#12",
+    "buttenschoenPoseBustersAIbasedDocking2024#21"
+   ]
+  },
+  {
+   "consulta": "docking to AF2 models pose accuracy not significantly higher than homology models percentage within 2 A",
+   "pasajes": [
+    "karelina2023accurately#5",
+    "karelina2023accurately#13",
+    "karelina2023accurately#12",
+    "karelina2023accurately#16",
+    "karelina2023accurately#9",
+    "karelina2023accurately#20"
+   ]
+  },
+  {
+   "consulta": "pLDDT confidence correlates with model accuracy per residue utility interpretation",
+   "pasajes": [
+    "akdel2022structural#12",
+    "akdel2022structural#5",
+    "feidakis2026tale#56",
+    "akdel2022structural#9",
+    "feidakis2026tale#27",
+    "akdel2022structural#4",
+    "feidakis2026tale#57",
+    "feidakis2026tale#26",
+    "bekarcesaretli2024conservation#26",
+    "bekarcesaretli2024conservation#32"
+   ]
+  },
+  {
+   "consulta": "AlphaFold database models starting point for binding site prediction docking virtual screening promise drug discovery",
+   "pasajes": [
+    "bekarcesaretli2024conservation#40",
+    "buttenschoenPoseBustersAIbasedDocking2024#3",
+    "feidakis2026tale#2",
+    "diazrovira2023deep#1",
+    "lee2023evaluating#12",
+    "lee2023evaluating#17",
+    "bekarcesaretli2024conservation#8",
+    "holcomb2023evaluation#2"
+   ]
+  }
+ ],
+ "pasajes": [
+  "holcomb2023evaluation#12",
+  "holcomb2023evaluation#6",
+  "holcomb2023evaluation#9",
+  "holcomb2023evaluation#15",
+  "holcomb2023evaluation#5",
+  "holcomb2023evaluation#13",
+  "holcomb2023evaluation#8",
+  "holcomb2023evaluation#16",
+  "lee2023evaluating#22",
+  "karelina2023accurately#20",
+  "feidakis2026tale#31",
+  "lee2023evaluating#12",
+  "scardino2023good#12",
+  "feidakis2026tale#54",
+  "scardino2023good#20",
+  "skrinjar2026evaluating#34",
+  "diazrovira2023deep#9",
+  "bekarcesaretli2024conservation#2",
+  "scardino2023good#1",
+  "scardino2023good#5",
+  "bekarcesaretli2024conservation#40",
+  "lee2023evaluating#17",
+  "diazrovira2023deep#1",
+  "lee2023evaluating#16",
+  "buttenschoenPoseBustersAIbasedDocking2024#3",
+  "karelina2023accurately#1",
+  "diazrovira2023deep#21",
+  "holcomb2023evaluation#2",
+  "feidakis2026tale#2",
+  "diazrovira2023deep#6",
+  "scardino2023good#29",
+  "karelina2023accurately#21",
+  "skrinjar2026evaluating#27",
+  "feidakis2026tale#57",
+  "diazrovira2023deep#13",
+  "lee2023evaluating#30",
+  "buttenschoenPoseBustersAIbasedDocking2024#18",
+  "buttenschoenPoseBustersAIbasedDocking2024#7",
+  "buttenschoenPoseBustersAIbasedDocking2024#27",
+  "buttenschoenPoseBustersAIbasedDocking2024#22",
+  "buttenschoenPoseBustersAIbasedDocking2024#12",
+  "buttenschoenPoseBustersAIbasedDocking2024#21",
+  "karelina2023accurately#5",
+  "karelina2023accurately#13",
+  "karelina2023accurately#12",
+  "karelina2023accurately#16",
+  "karelina2023accurately#9",
+  "akdel2022structural#12",
+  "akdel2022structural#5",
+  "feidakis2026tale#56",
+  "akdel2022structural#9",
+  "feidakis2026tale#27",
+  "akdel2022structural#4",
+  "feidakis2026tale#26",
+  "bekarcesaretli2024conservation#26",
+  "bekarcesaretli2024conservation#32",
+  "holcomb2023evaluation#4",
+  "bekarcesaretli2024conservation#8",
+  "buttenschoenPoseBustersAIbasedDocking2024#17",
+  "buttenschoenPoseBustersAIbasedDocking2024#19",
+  "buttenschoenPoseBustersAIbasedDocking2024#20",
+  "feidakis2026tale#28",
+  "akdel2022structural#8",
+  "akdel2022structural#10",
+  "buttenschoenPoseBustersAIbasedDocking2024#8",
+  "buttenschoenPoseBustersAIbasedDocking2024#9",
+  "buttenschoenPoseBustersAIbasedDocking2024#10",
+  "buttenschoenPoseBustersAIbasedDocking2024#11",
+  "buttenschoenPoseBustersAIbasedDocking2024#13",
+  "buttenschoenPoseBustersAIbasedDocking2024#14",
+  "buttenschoenPoseBustersAIbasedDocking2024#15",
+  "buttenschoenPoseBustersAIbasedDocking2024#16"
+ ]
+}

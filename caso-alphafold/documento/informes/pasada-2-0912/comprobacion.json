@@ -1,0 +1,624 @@
+{
+ "comprobado": "2026-11-26T09:12:48",
+ "citas": {
+  "validas": [
+   "feidakis2026tale",
+   "akdel2022structural",
+   "scardino2023good",
+   "diazrovira2023deep",
+   "lee2023evaluating",
+   "karelina2023accurately",
+   "holcomb2023evaluation",
+   "buttenschoenPoseBustersAIbasedDocking2024",
+   "bekarcesaretli2024conservation",
+   "skrinjar2026evaluating"
+  ],
+  "desconocidas": [],
+  "fuera_de_las_colecciones": [],
+  "sin_pdf": [],
+  "mal_formadas": [],
+  "pendientes": 0,
+  "en_coleccion": 10,
+  "sin_citar": []
+ },
+ "citas_literales": [
+  {
+   "seccion": "Introducción",
+   "cita_literal": "even where the modelled pocket is accurate",
+   "claves": [
+    "feidakis2026tale"
+   ],
+   "encontrada_en": "feidakis2026tale",
+   "mas_parecido": null
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "cita_literal": "is not predictive of docking performance",
+   "claves": [
+    "holcomb2023evaluation"
+   ],
+   "encontrada_en": "holcomb2023evaluation",
+   "mas_parecido": null
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "cita_literal": "a disparity between the structural metrics used to assess prediction quality and docking performance",
+   "claves": [
+    "holcomb2023evaluation"
+   ],
+   "encontrada_en": "holcomb2023evaluation",
+   "mas_parecido": null
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "cita_literal": "is not indicative of the ability to use these structures for docking",
+   "claves": [
+    "holcomb2023evaluation"
+   ],
+   "encontrada_en": "holcomb2023evaluation",
+   "mas_parecido": null
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "cita_literal": "neither pLDDT nor the winning probability warns of these models",
+   "claves": [
+    "feidakis2026tale"
+   ],
+   "encontrada_en": "feidakis2026tale",
+   "mas_parecido": null
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "cita_literal": "is not enough to guarantee that AF models can be reliably used for molecular docking purposes",
+   "claves": [
+    "scardino2023good"
+   ],
+   "encontrada_en": "scardino2023good",
+   "mas_parecido": null
+  }
+ ],
+ "bibliografia": "borrador/referencias.bib",
+ "atribuciones_sin_cita": [],
+ "juez": {
+  "estado": "terminado",
+  "pid": 2684534,
+  "inicio": "2026-11-26T09:10:40",
+  "hechos": 18,
+  "total": 18,
+  "error": null,
+  "fin": "2026-11-26T09:10:54"
+ },
+ "apoyo": [
+  {
+   "seccion": "Introducción",
+   "frase": "La base de datos AlphaFold contiene más de 200 millones de modelos, uno por secuencia conocida, y muchos de ellos con confianza alta [@feidakis2026tale].",
+   "previa": "AlphaFold ha dejado de ser una promesa para convertirse en un punto de partida por defecto.",
+   "clave": "feidakis2026tale",
+   "veredicto": "apoyada",
+   "motivo": "La introducción dice que AFDB tiene más de 200 millones de modelos, uno por proteína, muchos con alta confianza.",
+   "pasaje": {
+    "id": "feidakis2026tale#2",
+    "seccion": "Introduction",
+    "paginas": "1-2",
+    "texto": "AlphaFold now provides a structural model for nearly every known protein sequence: more than 200 million of them in the AlphaFold Protein Structure Database (AFDB), one per protein1–3, many at high confidence4. These models are increasingly used as starting points for binding-site prediction, molecular docking and virtual screening5–8, tasks in which the shape of the ligand-binding pocket often decides the outcome. A ligand-bound (holo) structure presents the pocket in a conformation\n\n. CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made\n\nThe copyright holder for this preprint this version posted October 30, 2026. ; https://doi.org/10.64898/2026.10.26.762003 doi: bioRxiv preprint\n\ncompatible with its ligand. A ligand-free (apo) structure of the same site can differ from it by rotated side chains, displaced loops, a domain cleft left open or, at cryptic sites, a pocket that has not formed9–11. Docking performance declines when going from holo to apo to modelled receptors12, and docking into AlphaFold models recovers crystallographic poses less often than docking into holo structures6,13, even where the modelled pocket is accurate14. Whether an AlphaFold pocket resembles the apo state, the holo state or something in between, can therefore affect its suitability in binding-site detection and docking."
+   }
+  },
+  {
+   "seccion": "Introducción",
+   "frase": "Esos modelos se usan cada vez más como punto de partida para la predicción de sitios de unión, el docking molecular y el cribado virtual, tareas en las que la forma del bolsillo de unión suele decidir el resultado [@feidakis2026tale].",
+   "previa": "La base de datos AlphaFold contiene más de 200 millones de modelos, uno por secuencia conocida, y muchos de ellos con confianza alta [@feidakis2026tale].",
+   "clave": "feidakis2026tale",
+   "veredicto": "apoyada",
+   "motivo": "La introducción afirma que los modelos se usan cada vez más como punto de partida para predicción de sitios, docking y cribado virtual, tareas donde la forma del bolsillo suele decidir el resultado.",
+   "pasaje": {
+    "id": "feidakis2026tale#2",
+    "seccion": "Introduction",
+    "paginas": "1-2",
+    "texto": "AlphaFold now provides a structural model for nearly every known protein sequence: more than 200 million of them in the AlphaFold Protein Structure Database (AFDB), one per protein1–3, many at high confidence4. These models are increasingly used as starting points for binding-site prediction, molecular docking and virtual screening5–8, tasks in which the shape of the ligand-binding pocket often decides the outcome. A ligand-bound (holo) structure presents the pocket in a conformation\n\n. CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made\n\nThe copyright holder for this preprint this version posted October 30, 2026. ; https://doi.org/10.64898/2026.10.26.762003 doi: bioRxiv preprint\n\ncompatible with its ligand. A ligand-free (apo) structure of the same site can differ from it by rotated side chains, displaced loops, a domain cleft left open or, at cryptic sites, a pocket that has not formed9–11. Docking performance declines when going from holo to apo to modelled receptors12, and docking into AlphaFold models recovers crystallographic poses less often than docking into holo structures6,13, even where the modelled pocket is accurate14. Whether an AlphaFold pocket resembles the apo state, the holo state or something in between, can therefore affect its suitability in binding-site detection and docking."
+   }
+  },
+  {
+   "seccion": "Introducción",
+   "frase": "Para una parte grande del proteoma esto abre una puerta que antes estaba cerrada: en los proteomas de once especies modelo, AlphaFold cubre de media un 44 % de residuos más que los modelos previos de SWISS-MODEL Repository, y alrededor del 25 % de los residuos quedan cubiertos con predicciones nuevas y de confianza, con pLDDT por encima de 70 [@akdel2022structural].",
+   "previa": "Esos modelos se usan cada vez más como punto de partida para la predicción de sitios de unión, el docking molecular y el cribado virtual, tareas en las que la forma del bolsillo de unión suele decidir el resultado [@feidakis2026tale].",
+   "clave": "akdel2022structural",
+   "veredicto": "apoyada",
+   "motivo": "Akdel et al. indican 11 especies, 44% de cobertura adicional media de residuos y alrededor del 25% con predicciones nuevas y confiables (pLDDT>70).",
+   "pasaje": {
+    "id": "akdel2022structural#9",
+    "seccion": "Results",
+    "paginas": "2-3",
+    "texto": "Added structural coverage by AlphaFold2 predictions of model proteomes The AF2 database has released predictions of the canonical protein isoforms for 21 model species, covering nearly every residue in 365,198 proteins. This represents around twice the number of experimental structures and six times the number of unique proteins in the Protein Data Bank (PDB). It is important to assess the extent to which AF2 predictions extend the structural coverage beyond previous proteome-wide structural predictions. We compared the structures of 11 model species that were included in both the SMR and AF2 databases and that had an average additional coverage of 44% of residues by AF2 (Fig. 1a, residues). However, not all of AF2’s residue predictions have high confidence. For residues that are not present in the SMR, we observed that an average of 49.4% are predicted with confidence by AF2 (predicted local distance difference test score (pLDDT) > 70) (Fig. 1a, AF residue confidence). With a more stringent cut-off (pLDDT > 90), AF2 predicts, on average, 25% of residues with very high confidence. In summary, an average of around 25% of the residues of the proteomes of the 11 model species are covered by AF2 with novel (not present in SRM) and confident (pLDDT > 70) predictions.\n\nNature Structural & Molecular Biology | Volume 29 | November 2022 | 1056–1067 1058\n\nArticle https://doi.org/10.1038/s41594-022-00849-w"
+   }
+  },
+  {
+   "seccion": "Introducción",
+   "frase": "Scardino y colaboradores compararon el cribado de alto rendimiento sobre modelos de AlphaFold «as-is» con el de sus estructuras correspondientes del PDB en 22 dianas y concluyen que el rendimiento de los modelos es consistentemente peor, con factores de enriquecimiento nulos en varias proteínas [@scardino2023good].",
+   "previa": "La pregunta de si esos modelos sirven para docking ya tiene varias respuestas publicadas, y todas apuntan en la misma dirección.",
+   "clave": "scardino2023good",
+   "veredicto": "apoyada",
+   "motivo": "Los pasajes confirman 22 dianas, modelos AF as-is frente a estructuras PDB, rendimiento consistentemente peor y EF cero en varias proteínas.",
+   "pasaje": {
+    "id": "scardino2023good#5",
+    "seccion": "The AF models showed consistently worse performance using four docking pro- / INTRODUCTION",
+    "paginas": "3",
+    "texto": "Remarkably, ‘‘AlphaFold is trained to predict the structure of proteins as they might appear in the PDB’’ (https://alphafold.ebi.ac.uk/faq); moreover, ‘‘backbone and side chain coordinates are frequently consistent with the expected structure in the presence of ions (e.g., for zinc-binding sites) or co-factors (e.g., side chain geometry consistent with heme binding)’’ (https://alphafold.ebi.ac.uk/faq). These facts, and the public and impressive success of AF in terms of overall model accuracy, prompted us to evaluate how accurate and useful as-is AF models are in the context of docking-based drug discovery, as an alternative to using PDB structures. On 22 diverse proteins we compared the performance of AF models (extracted from the AlphaFold Protein Structure Database) versus PDB structures in HTD. We conclude that despite an overall very good accuracy in reproducing protein topology and the binding site, HTD on AF models exhibits a consistent worse performance compared with experimental structures, with zero enrichment factors in several proteins."
+   }
+  },
+  {
+   "seccion": "Introducción",
+   "frase": "Díaz-Rovira y colaboradores llegan a una recomendación práctica: los modelos de AlphaFold2 recién salidos no son el escenario ideal para una campaña de cribado virtual, y aconsejan añadir un post-procesado que lleve el sitio de unión hacia un modelo holo más realista [@diazrovira2023deep].",
+   "previa": "Scardino y colaboradores compararon el cribado de alto rendimiento sobre modelos de AlphaFold «as-is» con el de sus estructuras correspondientes del PDB en 22 dianas y concluyen que el rendimiento de los modelos es consistentemente peor, con factores de enriquecimiento nulos en varias proteínas [@scardino2023good].",
+   "clave": "diazrovira2023deep",
+   "veredicto": "apoyada",
+   "motivo": "El resumen dice que los modelos AF2 listos para usar no son ideales para cribado virtual y recomienda post-procesado para llevar el sitio de unión a un modelo holo más realista.",
+   "pasaje": {
+    "id": "diazrovira2023deep#1",
+    "seccion": "Texto",
+    "paginas": "1",
+    "texto": "Are Deep Learning Structural Models Sufficiently Accurate for Virtual Screening? Application of Docking Algorithms to AlphaFold2 Predicted Structures\n\nAnna M. Díaz-Rovira, Helena Martín, Thijs Beuming, Lucía Díaz, Victor Guallar,* and Soumya S. Ray*\n\nCite This: J. Chem. Inf. Model. 2023, 63, 1668−1674 Read Online\n\nACCESS Metrics & More Article Recommendations * sı Supporting Information\n\nABSTRACT: Machine learning-based protein structure prediction algorithms, such as RosettaFold and AlphaFold2, have greatly impacted the structural biology field, arousing a fair amount of discussion around their potential role in drug discovery. While there are few preliminary studies addressing the usage of these models in virtual screening, none of them focus on the prospect of hit-finding in a real-world virtual screen with a model based on low prior structural information. In order to address this, we have developed an AlphaFold2 version where we exclude all structural templates with more than 30% sequence identity from the modelbuilding process. In a previous study, we used those models in conjunction with state-of-the-art free energy perturbation methods and demonstrated that it is possible to obtain quantitatively accurate results. In this work, we focus on using these structures in rigid receptor-ligand docking studies. Our results indicate that using out-of-the-box Alphafold2 models is not an ideal scenario for virtual screening campaigns; in fact, we strongly recommend to include some post-processing modeling to drive the binding site into a more realistic holo model. ■INTRODUCTION"
+   }
+  },
+  {
+   "seccion": "Introducción",
+   "frase": "En receptores acoplados a proteína G, el cribado virtual sobre modelos de AlphaFold rindió algo peor que sobre las estructuras experimentales nativas, aunque mejor que sobre los modelos por homología, de forma consistente entre herramientas de docking [@lee2023evaluating].",
+   "previa": "Díaz-Rovira y colaboradores llegan a una recomendación práctica: los modelos de AlphaFold2 recién salidos no son el escenario ideal para una campaña de cribado virtual, y aconsejan añadir un post-procesado que lleve el sitio de unión hacia un modelo holo más realista [@diazrovira2023deep].",
+   "clave": "lee2023evaluating",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje afirma que el cribado sobre modelos AlphaFold fue algo peor que sobre estructuras nativas pero superior a los TBM, de forma consistente entre herramientas de docking, en GPCRs.",
+   "pasaje": {
+    "id": "lee2023evaluating#17",
+    "seccion": "2 Overview of the benchmark dataset",
+    "paginas": "5",
+    "texto": "ders in the set are inhibitors (antagonist or inverse agonists), we simply employed ‘‘AF,as-is” for the AlphaFold models in virtual screening tests. As shown in Fig. 4A-B, virtual screening on Alpha- Fold models showed somewhat worse performance than that on native experimental structures, but was superior to the results on TBMs, consistently through the docking tools (per-target breakdown analyses in Supplementary Fig. S8). The results again prove the improved performance of the DL-predicted receptor models for drug discovery. Meanwhile, GALD consistently outperformed Vina and Vina-RF throughout the receptor structure types and target receptors (full ROC curves in Supplementary Fig. S9), supporting successful pose prediction can be important for virtual screening performance. Despite the GALD’s improved performance over Vina and Vina-RF on GPCRs, the virtual screening result here needs to be carefully taken until it is benchmarked on a broader set of receptors along with many other docking tools.\n\n5. Deep-learning-based protein-peptide complex modeling outperforms previous peptide docking tools\n\nPeptides are an important class of ligands for GPCRs. Class B1 GPCRs take peptides as their natural agonists, and also many class A GPCRs adopt peptides either as agonists or antagonists. Here we explore how we can beneﬁt from using DL methods for GPCR- peptide complex structure prediction.\n\nOne clear advantage of DL methods over many other peptide docking tools is that they can predict the whole complex structure at once. With this advantage, both receptor and peptide ligand ﬂexibility are naturally considered. Here, the AlphaFold_multimer modeling strategy is compared against using three other available peptide docking tools [26–28] to dock peptides on pre-generated AlphaFold receptor models."
+   }
+  },
+  {
+   "seccion": "Introducción",
+   "frase": "Karelina y colaboradores encontraron que los modelos de AlphaFold2 capturan la estructura de los bolsillos de unión mucho mejor que los modelos por homología tradicionales, hasta el punto de que la diferencia típica entre el bolsillo de un modelo y el de una estructura experimental es solo algo mayor que la que hay entre dos estructuras experimentales de la misma proteína con ligandos distintos; y sin embargo las poses predichas sobre modelos de AlphaFold2 no son significativamente más precisas que las predichas sobre modelos tradicionales, y son mucho menos precisas que las obtenidas sobre estructuras experimentales [@karelina2023accurately].",
+   "previa": "El hallazgo más incómodo de esa literatura es que la calidad estructural y la utilidad para docking no van de la mano.",
+   "clave": "karelina2023accurately",
+   "veredicto": "apoyada",
+   "motivo": "Los pasajes confirman que los bolsillos de AF2 son mucho más precisos que los de modelos tradicionales, solo algo mayores en diferencia que entre estructuras experimentales con distintos ligandos, y que las poses no son significativamente mejores que con modelos tradicionales y mucho peores que con estructuras experimentales.",
+   "pasaje": {
+    "id": "karelina2023accurately#5",
+    "seccion": "eLife assessment / Introduction",
+    "paginas": "2",
+    "texto": "Our results reveal both strengths and weaknesses of AF2 models. The structural accuracy of ligand-­binding pockets in AF2 models is usually substantially higher than that of traditional homology models. Indeed, the typical difference between corresponding binding pockets in an AF2 model and in an experimentally determined structure is only slightly larger than the typical difference between two experimentally determined structures of the same protein with different ligands bound. Surprisingly, however, ligand-­binding poses predicted given AF2 models are not significantly more accurate than those predicted given traditional models and are much less accurate than those predicted by docking computationally to experimentally determined protein structures. Our results provide guidelines as to how AF2 models should—and should not—be used for effective ligand-­binding prediction. Our findings also suggest opportunities for improving structure prediction methods to maximize their impact on drug discovery."
+   }
+  },
+  {
+   "seccion": "Introducción",
+   "frase": "En la misma línea, el rendimiento del docking cae al pasar de holo a apo y de apo a modelado, y el docking sobre modelos de AlphaFold recupera las poses cristalográficas menos veces que el docking sobre estructuras holo «even where the modelled pocket is accurate» [@feidakis2026tale].",
+   "previa": "Karelina y colaboradores encontraron que los modelos de AlphaFold2 capturan la estructura de los bolsillos de unión mucho mejor que los modelos por homología tradicionales, hasta el punto de que la diferencia típica entre el bolsillo de un modelo y el de una estructura experimental es solo algo mayor que la que hay entre dos estructuras experimentales de la misma proteína con ligandos distintos; y sin embargo las poses predichas sobre modelos de AlphaFold2 no son significativamente más precisas que las predichas sobre modelos tradicionales, y son mucho menos precisas que las obtenidas sobre estructuras experimentales [@karelina2023accurately].",
+   "clave": "feidakis2026tale",
+   "veredicto": "apoyada",
+   "motivo": "La introducción de la obra afirma que el docking declina de holo a apo a modelado y que el docking en modelos de AlphaFold recupera poses cristalográficas menos veces que en estructuras holo, incluso cuando el bolsillo modelado es preciso.",
+   "pasaje": {
+    "id": "feidakis2026tale#2",
+    "seccion": "Introduction",
+    "paginas": "1-2",
+    "texto": "AlphaFold now provides a structural model for nearly every known protein sequence: more than 200 million of them in the AlphaFold Protein Structure Database (AFDB), one per protein1–3, many at high confidence4. These models are increasingly used as starting points for binding-site prediction, molecular docking and virtual screening5–8, tasks in which the shape of the ligand-binding pocket often decides the outcome. A ligand-bound (holo) structure presents the pocket in a conformation\n\n. CC-BY 4.0 International license available under a (which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made\n\nThe copyright holder for this preprint this version posted October 30, 2026. ; https://doi.org/10.64898/2026.10.26.762003 doi: bioRxiv preprint\n\ncompatible with its ligand. A ligand-free (apo) structure of the same site can differ from it by rotated side chains, displaced loops, a domain cleft left open or, at cryptic sites, a pocket that has not formed9–11. Docking performance declines when going from holo to apo to modelled receptors12, and docking into AlphaFold models recovers crystallographic poses less often than docking into holo structures6,13, even where the modelled pocket is accurate14. Whether an AlphaFold pocket resembles the apo state, the holo state or something in between, can therefore affect its suitability in binding-site detection and docking."
+   }
+  },
+  {
+   "seccion": "Introducción",
+   "frase": "Holcomb y colaboradores plantearon el problema para AutoDock comparando estructuras predichas por AlphaFold2 con estructuras resueltas experimentalmente en ejercicios de redocking [@holcomb2023evaluation].",
+   "previa": "Queda entonces una pregunta práctica que un investigador se hace delante del modelo que acaba de descargar: ¿puede usar la confianza que AlphaFold le da, el pLDDT, como semáforo antes de gastar tiempo en docking?",
+   "clave": "holcomb2023evaluation",
+   "veredicto": "apoyada",
+   "motivo": "La introducción dice que buscan comparar el rendimiento de AutoDock con estructuras de AF2 frente a estructuras experimentales en ejercicios de redocking, lo que coincide con la frase.",
+   "pasaje": {
+    "id": "holcomb2023evaluation#4",
+    "seccion": "1  INTRODUCTION",
+    "paginas": "2",
+    "texto": "Use of computationally derived models of proteins in docking simulations poses multiple challenges. Perhaps most importantly, docking methods are typically quite sensitive to the local details of loop flexibility and sidechain conformation. A variety of methods are used to address this challenge, including docking approaches that include target flexibility within the docking experiment and methods that dock to an ensemble of conformations derived from molecular dynamics of the target. Additionally, methods such as AF2 are currently most effective for monomeric proteins that have defined, folded native structures. We might expect that this limitation will be lifted as the method is improved to predict functional oligomeric assemblies.\n\nIn this study, we seek to benchmark the performance of AutoDock using AF2-determined structures relative to experimentally resolved structures in redocking exercises. We are adopting the structure and standards of the CASF competition (Su et al., 2019), in which comparisons between docking methodologies are usually made, to instead evaluate the source of the target structure.\n\n2 |"
+   }
+  },
+  {
+   "seccion": "Datos",
+   "frase": "Partimos del PoseBusters Benchmark set, un conjunto de complejos proteína-ligando cristalográficos seleccionados del PDB, recientes, de alta calidad y con moléculas de tipo fármaco; contiene solo complejos publicados desde 2021 y, por tanto, ninguno presente en el PDBbind General Set v2020 con el que se entrenaron muchos métodos [@buttenschoenPoseBustersAIbasedDocking2024].",
+   "previa": "",
+   "clave": "buttenschoenPoseBustersAIbasedDocking2024",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje 18 describe el conjunto como complejos cristalográficos del PDB, recientes, de alta calidad, con moléculas tipo fármaco, solo desde 2021 y sin ninguno del PDBbind General Set v2020 usado para entrenar muchos métodos.",
+   "pasaje": {
+    "id": "buttenschoenPoseBustersAIbasedDocking2024#18",
+    "seccion": "Methods",
+    "paginas": "5",
+    "texto": "2.6.2 PoseBusters Benchmark set. The PoseBusters Benchmark set is a new set of carefully-selected publiclyavailable crystal complexes from the PDB. It is a diverse set of recent high-quality protein–ligand complexes which contain drug-like molecules. It only contains complexes released since 2021 and therefore does not contain any complexes present in the PDBbind General Set v2020 used to train many of the methods. Table S2† lists the steps used to select the 308 unique proteins and 308 unique ligands in the PoseBusters Benchmark set. The complexes were downloaded from the PDB as MMTF les and PyMOL was used to remove solvents and all occurrences of the ligand of interest before saving the proteins with the cofactors in PDB les and the ligands in SDF les."
+   }
+  },
+  {
+   "seccion": "Datos",
+   "frase": "El artículo describe el conjunto con 308 proteínas y 308 ligandos únicos [@buttenschoenPoseBustersAIbasedDocking2024]; la distribución que descargamos contiene 428 entradas, y es sobre esas 428 sobre las que trabajamos.",
+   "previa": "Partimos del PoseBusters Benchmark set, un conjunto de complejos proteína-ligando cristalográficos seleccionados del PDB, recientes, de alta calidad y con moléculas de tipo fármaco; contiene solo complejos publicados desde 2021 y, por tanto, ninguno presente en el PDBbind General Set v2020 con el que se entrenaron muchos métodos [@buttenschoenPoseBustersAIbasedDocking2024].",
+   "clave": "buttenschoenPoseBustersAIbasedDocking2024",
+   "veredicto": "apoyada",
+   "motivo": "El artículo indica 308 proteínas y 308 ligandos únicos; lo de las 428 entradas es de la distribución descargada, no atribuido a la obra.",
+   "pasaje": {
+    "id": "buttenschoenPoseBustersAIbasedDocking2024#18",
+    "seccion": "Methods",
+    "paginas": "5",
+    "texto": "2.6.2 PoseBusters Benchmark set. The PoseBusters Benchmark set is a new set of carefully-selected publiclyavailable crystal complexes from the PDB. It is a diverse set of recent high-quality protein–ligand complexes which contain drug-like molecules. It only contains complexes released since 2021 and therefore does not contain any complexes present in the PDBbind General Set v2020 used to train many of the methods. Table S2† lists the steps used to select the 308 unique proteins and 308 unique ligands in the PoseBusters Benchmark set. The complexes were downloaded from the PDB as MMTF les and PyMOL was used to remove solvents and all occurrences of the ligand of interest before saving the proteins with the cofactors in PDB les and the ligands in SDF les."
+   }
+  },
+  {
+   "seccion": "Docking",
+   "frase": "La RMSD de la pose se calculó con corrección de simetría (`rdMolAlign.CalcRMS`) y se consideró acierto una RMSD por debajo de 2 Å, el criterio habitual y recomendado para ligandos de tamaño normal [@buttenschoenPoseBustersAIbasedDocking2024].",
+   "previa": "La caja se centró en el ligando experimental, con exhaustiveness 16 y 9 poses por corrida.",
+   "clave": "buttenschoenPoseBustersAIbasedDocking2024",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje indica que el umbral de 2 Å es arbitrario pero comúnmente usado y recomendado para ligandos de tamaño regular, y que se calcula RMSD con corrección de simetría; la frase atribuye esto a la obra con el mismo alcance.",
+   "pasaje": {
+    "id": "buttenschoenPoseBustersAIbasedDocking2024#17",
+    "seccion": "Methods",
+    "paginas": "5",
+    "texto": "PoseBusters calculates the minimum heavy-atom symmetryaware root-mean-square deviation (RMSD) between the predicted ligand binding mode and the closest crystallographic ligand using the RDKit's GetBestRMS function. Coverage, a metric oen used for testing docking methods, is the share of predictions that are within a user adjustable threshold which by default is 2 Å RMSD. This value is arbitrary but commonly-used and recommended for regular-size ligands.13\n\n2.4 Sequence identity\n\nIn this paper, sequence identity between two amino acid chains is the number of exact residue matches aer sequence alignment divided by the number of residues of the query sequence. The sequence alignment used is the Smith–Waterman algorithm39 implemented in Biopython40 using an open gap score of −11 and an extension gap score of −1 and the BLOSUM62\n\nsubstitution matrix. Unknown amino acid residues are counted as mismatches.\n\n2.5 Molecular mechanics energy minimisation\n\nPost-docking energy minimisation of the ligand structure in the binding pocket was performed using the AMBER ﬀ14sb force eld41 and the Sage small molecule force eld42 in OpenMM.43\n\nThe protein les were prepared using PDBxer43 and all protein atom positions were xed in space only allowing updates to the ligand atoms positions. Minimisation was performed until energy convergence within 0.01 kJ mol−1.\n\n2.6 Data\n\n2.6.1 Astex Diverse set. The Astex Diverse set27 published in 2007 is a set of hand-picked, relevant, diverse, and high-quality protein–ligand complexes from the PDB.14 The complexes were downloaded from the PDB as MMTF les44 and PyMOL45 was used to remove solvents and all occurrences of the ligand of interest from the complexes before saving the proteins with the cofactors in PDB les and the ligands in SDF les."
+   }
+  },
+  {
+   "seccion": "Docking",
+   "frase": "Karelina y colaboradores prepararon todas las estructuras y modelos con el Protein Preparation Wizard de Schrödinger incluyendo minimización de energía, y definieron la rejilla con una caja interior de 15 Å de lado y una exterior de 30 Å [@karelina2023accurately].",
+   "previa": "Conviene situar esta preparación frente a la de los trabajos publicados, porque no es equivalente.",
+   "clave": "karelina2023accurately",
+   "veredicto": "apoyada",
+   "motivo": "La obra indica que todas las estructuras y modelos se prepararon con el Protein Preparation Wizard incluyendo minimización de energía, y que la rejilla tenía caja interior de 15 Å y exterior de 30 Å.",
+   "pasaje": {
+    "id": "karelina2023accurately#21",
+    "seccion": "Methods",
+    "paginas": "11",
+    "texto": "Ligand preparation Ligands were extracted from PDB structures using the Schrödinger Python API and then manually inspected to make sure we had chosen the ligand at the orthosteric site. With the same API, ligands were converted to SMILES strings. Ligands were then prepared with Schrödinger’s LigPrep with default command line parameters (Schrödinger LLC, 2021).\n\nLigand similarity was defined as a ratio of the size of the maximum common substructure to the size of the smaller molecule. Ligand pairs for which this ratio was less than 0.5 were deemed very different ligands.\n\nProtein preparation Experimentally determined structures were downloaded from the PDB. Only a single chain containing the ligand was kept, and all waters were removed. All structures and models were prepared with Schrödinger Protein Preparation Wizard (Schrödinger LLC, 2021 ) following the same protocols as Paggi et al., 2021, including energy minimization. All the experimentally determined structures were determined with a ligand bound, and we retained this ligand during minimization. Computationally predicted models did not include a ligand.\n\nGlide docking For Glide XP and Glide SP docking, we follow the docking protocol described in Paggi et al., 2021. The grid is centered at the geometric centroid of the ligand and is defined with an inner box with 15 Å sides and outer box with 30 Å sides. For predicted structural models the center of the box is determined by aligning the model to an experimentally determined structure of that protein and using the centroid of its ligand. For this alignment, we pick the structure with the alphabetically first PDB entry ID."
+   }
+  },
+  {
+   "seccion": "Docking",
+   "frase": "Feidakis y colaboradores usaron una caja cúbica centrada en el centro de masas de los residuos del bolsillo, con un lado que depende del radio de giro de esos residuos y acotado entre 16 y 30 Å, con una mediana de 24,1 Å [@feidakis2026tale].",
+   "previa": "Karelina y colaboradores prepararon todas las estructuras y modelos con el Protein Preparation Wizard de Schrödinger incluyendo minimización de energía, y definieron la rejilla con una caja interior de 15 Å de lado y una exterior de 30 Å [@karelina2023accurately].",
+   "clave": "feidakis2026tale",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje describe una caja cúbica centrada en el centro de masas de los residuos del bolsillo, con arista 2·Rg+8 Å limitada a 16–30 Å y mediana de 24,1 Å.",
+   "pasaje": {
+    "id": "feidakis2026tale#54",
+    "seccion": "Molecular docking",
+    "paginas": "22",
+    "texto": "Cognate ligands (the query-holo ligands of AHoJ-DB, ion- and buffer-filtered, prepared with Meeko69) were docked into the AlphaFold pockets with Uni-Dock v1.1.370, a GPU implementation of the AutoDock Vina search and scoring function37,69. We used its balance search mode (384 Monte Carlo threads of 40 steps) with seed 42. Its developers rate this mode slightly below the detail mode they recommend for pose prediction, which reproduces 68% of CASF-2016 crystal poses within 2 Å, comparably to CPU Vina70. The search box was a cube centred on the centre of mass of the union pocket residues on the model. Its edge was 2·Rg + 8 Å, where Rg is the radius of gyration of those residues' heavy atoms and the 8 Å pad is fixed, clamped to 16–30 Å (median 24.1 Å); one box served every ligand of a pocket. The box is larger than the ligand-scaled optimum71 and ordinary by Vina's own convention37. Because its edge is a function of the pocket's Rg, the size-standardized contrasts below also hold box size fixed. Docking covered 61,216 pockets (ligand group G1: cognate ligands with a resolvable CCD entry), nested within the detection set; 61,012 of them carry a definite class (204 ties). Uni-Dock is not bit-reproducible on GPU at a fixed seed. Two runs of a 2,620-job calibration set on the same hardware and image differed in about 5% of top affinities and 0.2% of success calls, which is the noise floor of any comparison between docking runs (Supplementary Note 4). Success was defined as an in-pocket top pose (at least three heavy atoms of the top pose within 4 Å of a pocket heavy atom) scoring ≤ −6 kcal/mol. This is a commonly used cut without a formal derivation, adopted a priori."
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "Nuestro resultado central reproduce con otro conjunto de datos y otra implementación de AutoDock el de Holcomb y colaboradores [@holcomb2023evaluation].",
+   "previa": "",
+   "clave": "holcomb2023evaluation",
+   "veredicto": "parcial",
+   "motivo": "La obra respalda sus propios hallazgos (alineamiento no predictivo del docking), pero la frase atribuye a Holcomb 'reproducir' el resultado del documento con otros datos e implementación, comparación que pertenece al documento citante, no a la obra.",
+   "pasaje": {
+    "id": "holcomb2023evaluation#13",
+    "seccion": "3  DISCUSSION",
+    "paginas": "5-6",
+    "texto": "HOLCOMB ET AL. 5 of 8\n\n1469896x, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pro.4530 by Nat Prov Indonesia, Wiley Online Library on [29/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License\n\nThis may be due to the fact that the PDBbind is enriched for well-folded proteins, which would be expected to perform well with AF2. As such, this work may represent an upper bound on the ability to naively apply AF2-predicted structures to computer-aided drug design. However, as well-folded proteins are generally regarded as more “druggable,” this is still an important set of proteins to examine.\n\nThe loss in docking accuracy compared to redocking against the crystal structure was substantial (17% vs. 41%) and not predicted by the quality of the alignment\n\n(Table 1, Figure 1b). This indicates both that the difference in docking accuracy is not explained by poor alignment leading to inflated RMSD, and that high-quality predictions as measured by the RMSD metric used in evaluating AF2 at CASP is not indicative of the ability to use these structures for docking.\n\nWe were surprised that oligomerization played very little role in the success of the docking experiments, showing a success rate of 17% both for monomeric and oligomeric proteins in AF2 dockings. Cofactors, on the other hand, had a stronger impact on docking success,"
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "Ellos encontraron que la mayoría de las estructuras predichas se alineaban bien con las cocristalizadas y que el pLDDT de los residuos del bolsillo correlacionaba con ese alineamiento [@holcomb2023evaluation].",
+   "previa": "Nuestro resultado central reproduce con otro conjunto de datos y otra implementación de AutoDock el de Holcomb y colaboradores [@holcomb2023evaluation].",
+   "clave": "holcomb2023evaluation",
+   "veredicto": "apoyada",
+   "motivo": "La discusión afirma que la gran mayoría de estructuras predichas se alineaban bien con las cocristalizadas y que el pLDDT de los residuos del bolsillo correlacionaba con ese alineamiento.",
+   "pasaje": {
+    "id": "holcomb2023evaluation#12",
+    "seccion": "3  DISCUSSION",
+    "paginas": "5",
+    "texto": "In this work, we used AutoDock-GPU to evaluate structures predicted by AF2 as targets for docking. We found that the vast majority of predicted structures aligned well with the cocrystal structures, and that the pLDDTs, a measure of confidence of an AF2 model, for residues in the pocket correlated with this alignment (Figure 1c).\n\nFIGURE 4 An example of a low-confidence strand with potential pharmacophoric information. (a) Crystal structure from PDB ID 5hcy (gray) and AF2 predicted structure (colored by confidence measure, blue: pLDDT > 90, green: 90 > pLDDT > 70, yellow: 70 > pLDDT > 50, red: pLDDT < 50). A tyrosine with good pharmacophoric agreement with the crystallized ligand is shown; (b) docked ligand with best agreement to crystal (yellow) and side chains made flexible shown. (c) The overlap of the tyrosine in the low-confidence strand with the ligand. The pose in panel (b) is the best pose in the fifth-ranked cluster. Minimal structural information of the receptor is included to give context to the flexible side chain, other secondary structure is omitted. Only side chains treated as flexible in the docking are shown.\n\nFIGURE 3 An example of a low-confidence region interfering with docking. (a) Crystal structure from PDB ID 3qkd (gray); (b) AF2 predicted structure (colored by confidence measure, blue: pLDDT > 90, green: 90 > pLDDT > 70, yellow: 70 > pLDDT > 50, red: pLDDT < 50) highlighting overlap between low-confidence region and ligand crystal structure; (c) docked pose with best score (yellow). Phe105 and Tyr195 were treated flexibly in the AF2 model but are hidden for visual clarity."
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "Al mismo tiempo, informan de que ese alineamiento «is not predictive of docking performance», y describen el conjunto como «a disparity between the structural metrics used to assess prediction quality and docking performance» [@holcomb2023evaluation].",
+   "previa": "Ellos encontraron que la mayoría de las estructuras predichas se alineaban bien con las cocristalizadas y que el pLDDT de los residuos del bolsillo correlacionaba con ese alineamiento [@holcomb2023evaluation].",
+   "clave": "holcomb2023evaluation",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje de resultados dice que el alineamiento «is not predictive of docking performance» y que ello refleja «a disparity between the structural metrics used to assess prediction quality and docking performance».",
+   "pasaje": {
+    "id": "holcomb2023evaluation#6",
+    "seccion": "2  RESULTS",
+    "paginas": "2",
+    "texto": "A comparison of the docking RMSD against the predicted and cocrystal structures shows two lines along which most of the complexes fall (Figure 1a). In the complexes lying along the diagonal, the docking performance was comparable on the two sets of structures, indicating that poor RMSD in this region is due to inherent challenges in predicting the complex rather than features of the AF2 predicted structures. By contrast, the group of complexes lying in the low RMSD region for redocking against the crystal structure but have varying RMSDs against the predicted structure reflect complexes where the use of an AF2 predicted structure introduced a new challenge in the docking. This increased RMSD in the AF2 prediction is not reflective of poor alignment between the structures, which is not predictive of docking performance (Figure 1b). However, this alignment was correlated with the “predicted Local Distance Test” (pLDDT) used as a confidence measure for the AF2 predictions (Figure 1c). This reflects a disparity between the structural metrics used to assess prediction quality and docking performance. There is a bimodal distribution in the docking RMSDs for both docking tasks, which is more pronounced for the predicted structures (Figure 1a). Visual inspection suggests the first peak, centered at about 1.5 Å in both histograms, is associated with binding to the correct pocket, in an accurate or nearly accurate orientation, and the second peak, a broad peak at about 6 Å in both histograms, is associated with binding to a nearby pocket, or to the correct pocket with a highly inaccurate binding mode. The first peak roughly corresponds to the 2 Å RMSD cutoff defined as a successful docking."
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "Lo cierran diciendo que una predicción de alta calidad medida con la RMSD que se usa para evaluar AlphaFold2 en CASP «is not indicative of the ability to use these structures for docking» [@holcomb2023evaluation].",
+   "previa": "Al mismo tiempo, informan de que ese alineamiento «is not predictive of docking performance», y describen el conjunto como «a disparity between the structural metrics used to assess prediction quality and docking performance» [@holcomb2023evaluation].",
+   "clave": "holcomb2023evaluation",
+   "veredicto": "apoyada",
+   "motivo": "La discusión concluye que las predicciones de alta calidad según la RMSD usada en CASP no indican la capacidad de usar esas estructuras en docking, con la misma redacción citada.",
+   "pasaje": {
+    "id": "holcomb2023evaluation#13",
+    "seccion": "3  DISCUSSION",
+    "paginas": "5-6",
+    "texto": "HOLCOMB ET AL. 5 of 8\n\n1469896x, 2023, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/pro.4530 by Nat Prov Indonesia, Wiley Online Library on [29/09/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License\n\nThis may be due to the fact that the PDBbind is enriched for well-folded proteins, which would be expected to perform well with AF2. As such, this work may represent an upper bound on the ability to naively apply AF2-predicted structures to computer-aided drug design. However, as well-folded proteins are generally regarded as more “druggable,” this is still an important set of proteins to examine.\n\nThe loss in docking accuracy compared to redocking against the crystal structure was substantial (17% vs. 41%) and not predicted by the quality of the alignment\n\n(Table 1, Figure 1b). This indicates both that the difference in docking accuracy is not explained by poor alignment leading to inflated RMSD, and that high-quality predictions as measured by the RMSD metric used in evaluating AF2 at CASP is not indicative of the ability to use these structures for docking.\n\nWe were surprised that oligomerization played very little role in the success of the docking experiments, showing a success rate of 17% both for monomeric and oligomeric proteins in AF2 dockings. Cofactors, on the other hand, had a stronger impact on docking success,"
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "Karelina y colaboradores calcularon la precisión de la pose en función de la precisión del bolsillo y encontraron que, a igual RMSD del bolsillo, el docking sobre una estructura experimental da poses más precisas que sobre un modelo de AlphaFold2, con una diferencia estadísticamente significativa para todos los valores de RMSD del bolsillo por debajo de 1,1 Å [@karelina2023accurately].",
+   "previa": "El hallazgo de los 21 complejos tiene además un precedente cuantitativo preciso.",
+   "clave": "karelina2023accurately",
+   "veredicto": "apoyada",
+   "motivo": "La leyenda de la Figura 5 y el texto de resultados afirman que, a igual RMSD del bolsillo, el docking sobre estructuras experimentales da poses más precisas que sobre modelos AF2, con diferencia significativa para todos los RMSD por debajo de 1,1 Å.",
+   "pasaje": {
+    "id": "karelina2023accurately#20",
+    "seccion": "Methods",
+    "paginas": "10-11",
+    "texto": "determined LSD-­bound structure (the ‘reference structure’, white, PDB entry 6WGT). Amino acid residues that differ most from the reference structure are shown in sticks. (C, D) The LSD-­binding pose predicted by docking is less accurate (higher RMSD) when using the AF2 model than when using the traditional model.\n\nFigure 4 continued\n\nFigure 5. Pose prediction accuracy as a function of binding pocket structural accuracy when docking to AlphaFold 2 (AF2) models or experimentally determined structures. Docking to an experimentally determined structure generally leads to more accurate pose prediction than docking to an AF2 model with the same binding pocket root mean squared deviation (RMSD). The difference between the two curves is statistically significant for all binding pocket RMSD values below 1.1 Å (see Methods). See Figure 5—figure supplement 1 for additional data, including results for traditional models and for various docking methods.\n\nThe online version of this article includes the following figure supplement(s) for figure 5:\n\nFigure supplement 1. Pose prediction accuracy as a function of binding pocket structural accuracy when docking to AlphaFold 2 (AF2) models, experimentally determined structures or traditional template-­based models, with different docking protocols.\n\nResearch article﻿ Structural Biology and Molecular Biophysics\n\nKarelina et al. eLife 2023;12:RP89386. DOI: https://doi.org/10.7554/eLife.89386 \b 11 of 16\n\nexcluded models for which the minimum sequence identity of the templates was below 40%, as such template-­based models are typically not used for drug-­binding predictions.\n\nThis led to exclusion of models for four GPCRs (AGRG3, TA2R, PE2R2, and PE2R4). GPCRdb did not include models for two of the GPCRs (GPBAR and PE2R3)."
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "Feidakis y colaboradores describen el pLDDT del bolsillo como un indicador de cuánto varía un bolsillo, no de en qué estado se encuentra: sobre 237.922 bolsillos, el pLDDT del bolsillo caía a medida que aumentaba la diversidad conformacional, con Spearman −0,49, y ese efecto se mantenía incluso entre los bolsillos modelados por encima de 90, con −0,44 [@feidakis2026tale].",
+   "previa": "Hay además un mecanismo publicado que explica por qué el pLDDT no puede funcionar como semáforo para docking.",
+   "clave": "feidakis2026tale",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje recoge el pLDDT como indicador de cuánto varía el bolsillo, los 237.922 bolsillos, ρ=−0,49 y ρ=−0,44 por encima de 90.",
+   "pasaje": {
+    "id": "feidakis2026tale#27",
+    "seccion": "When can you trust the class label? Density and pLDDT",
+    "paginas": "12",
+    "texto": "The second descriptor is AlphaFold's confidence score, pLDDT, which reflects how much a pocket varies rather than which state it is in. Across the 237,922 pockets, pocket pLDDT fell as conformational diversity rose, diversity being the mean pocket RMSD of a site's experimental structures to the query structure (Spearman ρ = −0.49; Figure 5a), also after controlling for pocket size (partial ρ = −0.48), and it was unrelated to the evidence ratio (ρ = +0.07, and +0.01 once diversity is controlled; Figure 5b; Supplementary Figure S2), extending chain- and residue-level observations17,22 to 237,922 pockets. Low pLDDT is widely used to flag disorder, with published cutoffs between 504 and 68.842. Even among pockets modelled above 90, well inside the confidently ordered range, pLDDT still tracked how much the pocket varies across its experimental structures (ρ = −0.44; Figure 5c). pLDDT estimates how closely a model will match an experimental structure, and where a site's structures disagree with one another that match is inevitably lower. The score therefore registers the heterogeneity of the experimental record17,43 without indicating the state. Cryptic pockets expose this limit most clearly. Those of CryptoBench44 are modelled at slightly lower pLDDT than the non-cryptic pockets of the same apo structures (median 94.2 against 96.3), but no cut-off separates the two: below 90, pLDDT flags a quarter of the cryptic pockets and a tenth of the non-cryptic ones, and the difference disappears once diversity is fixed (Supplementary Table S13)."
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "Su lectura es que el pLDDT estima cuánto se parecerá el modelo a una estructura experimental y, por tanto, registra la heterogeneidad del registro experimental sin indicar el estado [@feidakis2026tale].",
+   "previa": "Feidakis y colaboradores describen el pLDDT del bolsillo como un indicador de cuánto varía un bolsillo, no de en qué estado se encuentra: sobre 237.922 bolsillos, el pLDDT del bolsillo caía a medida que aumentaba la diversidad conformacional, con Spearman −0,49, y ese efecto se mantenía incluso entre los bolsillos modelados por encima de 90, con −0,44 [@feidakis2026tale].",
+   "clave": "feidakis2026tale",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje dice que el pLDDT estima cuánto coincidirá el modelo con una estructura experimental y que por ello registra la heterogeneidad del registro experimental sin indicar el estado.",
+   "pasaje": {
+    "id": "feidakis2026tale#27",
+    "seccion": "When can you trust the class label? Density and pLDDT",
+    "paginas": "12",
+    "texto": "The second descriptor is AlphaFold's confidence score, pLDDT, which reflects how much a pocket varies rather than which state it is in. Across the 237,922 pockets, pocket pLDDT fell as conformational diversity rose, diversity being the mean pocket RMSD of a site's experimental structures to the query structure (Spearman ρ = −0.49; Figure 5a), also after controlling for pocket size (partial ρ = −0.48), and it was unrelated to the evidence ratio (ρ = +0.07, and +0.01 once diversity is controlled; Figure 5b; Supplementary Figure S2), extending chain- and residue-level observations17,22 to 237,922 pockets. Low pLDDT is widely used to flag disorder, with published cutoffs between 504 and 68.842. Even among pockets modelled above 90, well inside the confidently ordered range, pLDDT still tracked how much the pocket varies across its experimental structures (ρ = −0.44; Figure 5c). pLDDT estimates how closely a model will match an experimental structure, and where a site's structures disagree with one another that match is inevitably lower. The score therefore registers the heterogeneity of the experimental record17,43 without indicating the state. Cryptic pockets expose this limit most clearly. Those of CryptoBench44 are modelled at slightly lower pLDDT than the non-cryptic pockets of the same apo structures (median 94.2 against 96.3), but no cut-off separates the two: below 90, pLDDT flags a quarter of the cryptic pockets and a tenth of the non-cryptic ones, and the difference disappears once diversity is fixed (Supplementary Table S13)."
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "Para los modelos más alejados de ambos estados añaden que «neither pLDDT nor the winning probability warns of these models» [@feidakis2026tale].",
+   "previa": "Su lectura es que el pLDDT estima cuánto se parecerá el modelo a una estructura experimental y, por tanto, registra la heterogeneidad del registro experimental sin indicar el estado [@feidakis2026tale].",
+   "clave": "feidakis2026tale",
+   "veredicto": "apoyada",
+   "motivo": "La cita literal aparece en el pasaje, referida a los modelos más alejados de ambos estados (el décimo más lejano).",
+   "pasaje": {
+    "id": "feidakis2026tale#26",
+    "seccion": "When can you trust the class label? Density and pLDDT",
+    "paginas": "12",
+    "texto": "We also measured how far each model sits from the nearer of the two experimental states: the distance from its pocket to the closer of the average apo and average holo pocket of its site, in units of the spread within each state (Methods). This distance to the nearer state is the continuous counterpart of density: the farther the model, the lower its density (ρ = −0.74; Supplementary Note 2). The tenth of models farthest from both states lie outside the range that either state's structures cover. Both classes lose performance there, consensus detection by 9.0 percentage points (95% CI 7.1 to 11.0) and docking by 11.7 (8.6 to 14.8) after size standardization, while the class gap stays the same (Supplementary Table S8). Neither pLDDT nor the winning probability warns of these models: pLDDT does not change with the distance (ρ = −0.04), and the winning probability, if anything, rises with it (ρ = +0.21)."
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "La conclusión práctica de Scardino y colaboradores coincide con nuestros 21 complejos: la precisión de AlphaFold al reproducir la topología de la proteína y la anatomía del sitio de unión con buenos valores de pLDDT «is not enough to guarantee that AF models can be reliably used for molecular docking purposes» [@scardino2023good].",
+   "previa": "",
+   "clave": "scardino2023good",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje reproduce casi literalmente la conclusión: la precisión en topología, anatomía del sitio y pLDDT no basta para garantizar un uso fiable de los modelos AF en docking.",
+   "pasaje": {
+    "id": "scardino2023good#20",
+    "seccion": "PRC EF",
+    "paginas": "10",
+    "texto": "As it can be seen in Table 4, HTD on AF models shows consistently lower EF values assessed with two consensus methods (ECR and PRC) when compared with the HTD on the corresponding PDB structures, also complemented with poor native ligand RMSD values (cf. Table 5); in several cases, the EF on AF models is even zero. Results also deteriorated for each individual docking program. From Tables 2 and 4, it can be inferred that these poor EF values could be due to (i) large differences at the backbone level within the binding site (as in RENI, where no docking could be performed due to the distortion of the binding site) and (ii) small variations either at the backbone level (UROK, for example) or at the side-chain level (ANDR and PYRD, for example). In several cases, even very subtle differences within the binding site could have a huge impact on the EF, such as in ANDR and FABP4. In agreement with what has been shown by others,24,25,51 the AF models exhibit low backbone RMSD values compared with PDB structures, thus demonstrating the remarkable ability of AlphaFold to predict protein architecture; moreover, from Table 2, it can be readily seen that our models also show low backbone RMSD and good pLDDT values within the binding site. Therefore, we must conclude that the accuracy of AlphaFold in reproducing protein topology and binding site anatomy with very good values of the pLDDT metric is not enough to guarantee that AF models can be reliably used for molecular docking purposes."
+   }
+  },
+  {
+   "seccion": "Lo que ya estaba publicado, y dónde encaja esto",
+   "frase": "Ellos observan además que variaciones muy pequeñas dentro del sitio de unión, a veces solo en las cadenas laterales, pueden tener un impacto enorme en el factor de enriquecimiento [@scardino2023good].",
+   "previa": "La conclusión práctica de Scardino y colaboradores coincide con nuestros 21 complejos: la precisión de AlphaFold al reproducir la topología de la proteína y la anatomía del sitio de unión con buenos valores de pLDDT «is not enough to guarantee that AF models can be reliably used for molecular docking purposes» [@scardino2023good].",
+   "clave": "scardino2023good",
+   "veredicto": "apoyada",
+   "motivo": "La obra indica que incluso diferencias muy sutiles en el sitio de unión, a nivel de cadenas laterales, pueden tener un enorme impacto en el EF (ANDR, FABP4).",
+   "pasaje": {
+    "id": "scardino2023good#20",
+    "seccion": "PRC EF",
+    "paginas": "10",
+    "texto": "As it can be seen in Table 4, HTD on AF models shows consistently lower EF values assessed with two consensus methods (ECR and PRC) when compared with the HTD on the corresponding PDB structures, also complemented with poor native ligand RMSD values (cf. Table 5); in several cases, the EF on AF models is even zero. Results also deteriorated for each individual docking program. From Tables 2 and 4, it can be inferred that these poor EF values could be due to (i) large differences at the backbone level within the binding site (as in RENI, where no docking could be performed due to the distortion of the binding site) and (ii) small variations either at the backbone level (UROK, for example) or at the side-chain level (ANDR and PYRD, for example). In several cases, even very subtle differences within the binding site could have a huge impact on the EF, such as in ANDR and FABP4. In agreement with what has been shown by others,24,25,51 the AF models exhibit low backbone RMSD values compared with PDB structures, thus demonstrating the remarkable ability of AlphaFold to predict protein architecture; moreover, from Table 2, it can be readily seen that our models also show low backbone RMSD and good pLDDT values within the binding site. Therefore, we must conclude that the accuracy of AlphaFold in reproducing protein topology and binding site anatomy with very good values of the pLDDT metric is not enough to guarantee that AF models can be reliably used for molecular docking purposes."
+   }
+  },
+  {
+   "seccion": "Qué se puede hacer en su lugar",
+   "frase": "Holcomb y colaboradores encontraron que, en sistemas donde el docking directo sobre el modelo fracasaba, el resultado mejoraba sustancialmente con manipulaciones sencillas del receptor: el docking flexible resolvía choques de cadenas laterales que impedían la unión, y eliminar regiones de baja confianza despejaba sitios de unión ocluidos [@holcomb2023evaluation].",
+   "previa": "La literatura de estas colecciones no se queda en el diagnóstico.",
+   "clave": "holcomb2023evaluation",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje de la discusión afirma que el docking ingenuo fallido mejoraba sustancialmente con manipulaciones sencillas: docking flexible resolvía choques de cadenas laterales y eliminar regiones de baja confianza despejaba sitios ocluidos.",
+   "pasaje": {
+    "id": "holcomb2023evaluation#16",
+    "seccion": "3  DISCUSSION",
+    "paginas": "7",
+    "texto": "We did find that in some systems where naive docking against the AF2 predicted structure was unsuccessful, the docking results can be substantially improved by straightforward manipulations of the receptor. Flexible docking was capable of resolving side chain clashes that disrupted ligand binding, and removing low-confidence regions of the predicted structure cleared occluded binding sites. While these are challenging to address in a systematic way that would mimic a prospective screen, it suggests that researchers working on an individual target, or small set, may be capable of improving on our initial performance estimation. This could include special treatment of residues in the binding site that have been identified as important in biochemical studies, and careful attention to the possible contributions of cofactors, which would be expected to reduce success rates in docking to AF2 structures.\n\n4 |"
+   }
+  },
+  {
+   "seccion": "Qué se puede hacer en su lugar",
+   "frase": "Advierten, eso sí, de que esas intervenciones son difíciles de aplicar de forma sistemática en algo que imite un cribado prospectivo, aunque quien trabaje sobre una diana concreta o un conjunto pequeño sí puede mejorar la estimación inicial [@holcomb2023evaluation].",
+   "previa": "Holcomb y colaboradores encontraron que, en sistemas donde el docking directo sobre el modelo fracasaba, el resultado mejoraba sustancialmente con manipulaciones sencillas del receptor: el docking flexible resolvía choques de cadenas laterales que impedían la unión, y eliminar regiones de baja confianza despejaba sitios de unión ocluidos [@holcomb2023evaluation].",
+   "clave": "holcomb2023evaluation",
+   "veredicto": "apoyada",
+   "motivo": "La obra dice que son difíciles de abordar de forma sistemática que imite un cribado prospectivo, pero que investigadores con una diana individual o conjunto pequeño pueden mejorar la estimación inicial.",
+   "pasaje": {
+    "id": "holcomb2023evaluation#16",
+    "seccion": "3  DISCUSSION",
+    "paginas": "7",
+    "texto": "We did find that in some systems where naive docking against the AF2 predicted structure was unsuccessful, the docking results can be substantially improved by straightforward manipulations of the receptor. Flexible docking was capable of resolving side chain clashes that disrupted ligand binding, and removing low-confidence regions of the predicted structure cleared occluded binding sites. While these are challenging to address in a systematic way that would mimic a prospective screen, it suggests that researchers working on an individual target, or small set, may be capable of improving on our initial performance estimation. This could include special treatment of residues in the binding site that have been identified as important in biochemical studies, and careful attention to the possible contributions of cofactors, which would be expected to reduce success rates in docking to AF2 structures.\n\n4 |"
+   }
+  },
+  {
+   "seccion": "Qué se puede hacer en su lugar",
+   "frase": "Díaz-Rovira y colaboradores apuntan en la misma dirección con un protocolo de induced fit: aplicado al ligando cristalográfico en el modelo de ADRB2, partiendo de una pose inicial a 4,3 Å, recuperaron una pose casi nativa [@diazrovira2023deep].",
+   "previa": "Advierten, eso sí, de que esas intervenciones son difíciles de aplicar de forma sistemática en algo que imite un cribado prospectivo, aunque quien trabaje sobre una diana concreta o un conjunto pequeño sí puede mejorar la estimación inicial [@holcomb2023evaluation].",
+   "clave": "diazrovira2023deep",
+   "veredicto": "apoyada",
+   "motivo": "Díaz-Rovira aplicó el protocolo IFD de PELE al ligando cristalino en el modelo adrb2 AF30 con pose inicial a 4,3 Å y recuperó una pose casi nativa; además cita a Holcomb en la misma línea.",
+   "pasaje": {
+    "id": "diazrovira2023deep#13",
+    "seccion": "Texto",
+    "paginas": "5",
+    "texto": "Also, removing low-confidence regions of AF2 models and making side chains flexible improved the docking results with AutoDock.34 In addition, MD techniques, such as the ones developed for increasing the docking of ligands in apo structures, could be interesting to test.35,36 To further explore this point, we have performed PELE’s IFD protocol to the crystal ligand in the adrb2 AF30 model with an initial 4.3 Å pose. As seen in Figure S12, our standard IFD protocol,37 involving an initial broad search and a refinement procedure, retrieved a near-native pose (this protocol typically requires 2−3 h on a 32 core processor). Thus, while AF2 structures do not seem to be prepared for directly applying virtual screening, they could constitute a good initial seed to generate potential targets. This observation agrees as well with our recent study where FEP+ techniques were used on top of AF30 models (thus adding flexibility in the active site).23 Importantly, and as extensively described in this first study, AF2 is able to produce accurate structures even when very weak identity templates are provided. A double-ablation of the data must be performed, restricting both MSA and templates together, to observe a dramatic drop in accuracy. ■CONCLUSIONS Overall, our study indicates that the use of AF2 models for virtual screening has to be performed with a fair amount of caution. Models tend to be representative of apo structures without explicit water molecules, introducing a significant collapse of the BSs when compared to holo crystal structures. Thus, their use in molecular modeling activities requires additional care. As an initial step, we recommend comparing the top four templates used by AF2, superposing and analyzing potential differences in the BS."
+   }
+  },
+  {
+   "seccion": "Qué se puede hacer en su lugar",
+   "frase": "Su recomendación general es que los modelos de AlphaFold2 pueden servir como buena semilla inicial para generar dianas, más que como diana directa de cribado virtual [@diazrovira2023deep].",
+   "previa": "Díaz-Rovira y colaboradores apuntan en la misma dirección con un protocolo de induced fit: aplicado al ligando cristalográfico en el modelo de ADRB2, partiendo de una pose inicial a 4,3 Å, recuperaron una pose casi nativa [@diazrovira2023deep].",
+   "clave": "diazrovira2023deep",
+   "veredicto": "apoyada",
+   "motivo": "Los autores concluyen que las estructuras AF2 no están preparadas para cribado virtual directo pero podrían ser una buena semilla inicial para generar dianas potenciales.",
+   "pasaje": {
+    "id": "diazrovira2023deep#13",
+    "seccion": "Texto",
+    "paginas": "5",
+    "texto": "Also, removing low-confidence regions of AF2 models and making side chains flexible improved the docking results with AutoDock.34 In addition, MD techniques, such as the ones developed for increasing the docking of ligands in apo structures, could be interesting to test.35,36 To further explore this point, we have performed PELE’s IFD protocol to the crystal ligand in the adrb2 AF30 model with an initial 4.3 Å pose. As seen in Figure S12, our standard IFD protocol,37 involving an initial broad search and a refinement procedure, retrieved a near-native pose (this protocol typically requires 2−3 h on a 32 core processor). Thus, while AF2 structures do not seem to be prepared for directly applying virtual screening, they could constitute a good initial seed to generate potential targets. This observation agrees as well with our recent study where FEP+ techniques were used on top of AF30 models (thus adding flexibility in the active site).23 Importantly, and as extensively described in this first study, AF2 is able to produce accurate structures even when very weak identity templates are provided. A double-ablation of the data must be performed, restricting both MSA and templates together, to observe a dramatic drop in accuracy. ■CONCLUSIONS Overall, our study indicates that the use of AF2 models for virtual screening has to be performed with a fair amount of caution. Models tend to be representative of apo structures without explicit water molecules, introducing a significant collapse of the BSs when compared to holo crystal structures. Thus, their use in molecular modeling activities requires additional care. As an initial step, we recommend comparing the top four templates used by AF2, superposing and analyzing potential differences in the BS."
+   }
+  },
+  {
+   "seccion": "Qué se puede hacer en su lugar",
+   "frase": "En el caso de los receptores acoplados a proteína G, la estrategia de modelado del receptor y la consideración de la flexibilidad del receptor son críticas para el docking de moléculas pequeñas y el cribado virtual [@lee2023evaluating].",
+   "previa": "Su recomendación general es que los modelos de AlphaFold2 pueden servir como buena semilla inicial para generar dianas, más que como diana directa de cribado virtual [@diazrovira2023deep].",
+   "clave": "lee2023evaluating",
+   "veredicto": "apoyada",
+   "motivo": "El título de la sección 4 de la obra dice que la estrategia de modelado del receptor y la consideración de la flexibilidad del receptor son críticas para el docking de moléculas pequeñas y el cribado virtual de GPCR; el resumen lo respalda.",
+   "pasaje": {
+    "id": "lee2023evaluating#12",
+    "seccion": "2 Overview of the benchmark dataset",
+    "paginas": "4",
+    "texto": "work. Two other examples shown on the right panels of Fig. 2D highlight the structural differences in small-molecule binding site loops or helical orientations originating from variations in modeling strategies.\n\nHow is the expected docking performance for the best-practice DL models compared to that for experimentally resolved receptor structures? To address this question, we compared the distribution of binding site accuracy statistics for the AlphaFold models versus experimental structures in ‘‘cross-docking” scenarios, which may correspond to the best possible receptor structures in real practice drug design situations. Here, cross-docking refers to docking on experimental structures determined at an unbound state or bound state with other ligands. We ﬁnd that the AlphaFold model accuracy judged by the binding site backbone RMSD is far better than TBM, closely approaching the level of experimental structures for ‘‘cross-docking” (Fig. 2C).\n\nTo investigate if model accuracy depends on whether the target receptor was included in the training process of AlphaFold, statistics was examined separately by the deposited date of PDB entries. We see no distinction in model accuracy distributions (Supplementary Fig. S5), indicating the modeling protocol is robust throughout different GPCRs.\n\nBest-practice protocol: In summary, we choose ‘‘AF,bias” as the best practice receptor modeling protocol for small-molecule docking because of its modeling convenience among strategies considering activation states. For peptide docking, ‘‘AF,Gɑ” using AlphaFold_multimer is chosen as the best practice protocol which can optimally capture peptide binding sites.\n\n4. Receptor modeling strategy and consideration of receptor ﬂexibility are critical for small-molecule docking and virtual screening"
+   }
+  },
+  {
+   "seccion": "Qué se puede hacer en su lugar",
+   "frase": "Bekar-Cesaretli y colaboradores describen un caso, la diana con UniProt P08709, en el que más de la mitad de los residuos del sitio de unión estaban predichos con baja confianza y el hot spot más fuerte del modelo se conservaba igual que en la estructura cristalográfica unida [@bekarcesaretli2024conservation].",
+   "previa": "También conviene no convertir «la confianza no predice el acierto del docking» en «la confianza no sirve para nada», ni extender la conclusión a cualquier tarea sobre el bolsillo.",
+   "clave": "bekarcesaretli2024conservation",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje describe el objetivo P08709: 53% de residuos con baja confianza y el hot spot más fuerte con el mismo rango que en la estructura cristalográfica unida.",
+   "pasaje": {
+    "id": "bekarcesaretli2024conservation#26",
+    "seccion": "Texto",
+    "paginas": "8",
+    "texto": "Target 12 with UniProt ID P08709 is a member of Group 2, where the strongest hot spot of the AF model ranks the same as that of the bound crystal structure (Tables 4 and 6). We consulted the pLDDT scores of the binding site residues, which showed that 18% of the residues were predicted with high confidence, 29% with average confidence, and 53% with low confidence. The RMSDs from the alignments of the two structures are shown in Table 4, which reveal better agreement of the AF2 model with the ligand bound crystal structure and a large deviation from the unbound one. Figure 1b shows the binding sites for the AF2 model and the bound and the unbound crystal structures. Visually it is evident that the AF2 model binding site is an intermediate conformation between the two crystal structures. The opening of the AF model is not as closed\n\noff as in the unbound crystal structure, so a sufficient number of probes are able to enter the site and identify hot spots with close resemblance to that of the bound crystal structure. As shown in Table 6, the strongest hot spot overlaps well with the bound fragment in both the model and the bound crystal structure, although the one in the latter has more probe clusters. When considering the pLDDT scores, RMSDs, and mapping results altogether, it is surprising that such a combination of data produce a conserved hot spot. More than half of the binding site residues are predicted with low confidence, which is reflected in the slightly high all-atom RMSD values, yet mapping results indicate a conserved hot spot."
+   }
+  },
+  {
+   "seccion": "Qué se puede hacer en su lugar",
+   "frase": "Su conclusión es que los modelos generados por AlphaFold2 resultan adecuados para los enfoques computacionales del descubrimiento de fármacos basado en fragmentos, en parte porque la unión de fragmentos es mucho menos sensible a la geometría del bolsillo y a las conformaciones de las cadenas laterales que el docking de compuestos más grandes [@bekarcesaretli2024conservation].",
+   "previa": "Bekar-Cesaretli y colaboradores describen un caso, la diana con UniProt P08709, en el que más de la mitad de los residuos del sitio de unión estaban predichos con baja confianza y el hot spot más fuerte del modelo se conservaba igual que en la estructura cristalográfica unida [@bekarcesaretli2024conservation].",
+   "clave": "bekarcesaretli2024conservation",
+   "veredicto": "apoyada",
+   "motivo": "La obra concluye que los modelos AF2 deben ser adecuados para el descubrimiento de fármacos basado en fragmentos, citando que la unión de fragmentos es mucho menos sensible a la geometría del bolsillo y a las cadenas laterales que el docking de compuestos mayores.",
+   "pasaje": {
+    "id": "bekarcesaretli2024conservation#8",
+    "seccion": "Texto",
+    "paginas": "3",
+    "texto": "In this paper, we focus on a problem related to docking, namely, the identification of binding hot spots and ligand binding sites. Binding hot spots are regions on the protein surface that significantly contribute to the binding free energy of the protein−ligand interaction,17−20 and the strength of the hot spots reveals whether there exist potentially druggable sites that are capable of binding ligands with sufficient affinity.21,22 The knowledge of the binding site is generally required by docking methods that target a selected region frequently called the “docking box”.23,24 The method we use for binding hot spot\n\nidentification is protein mapping, which is essentially docking a variety of fragment-sized organic molecules.25,26 The docking is global; thus, the entire protein surface is explored. As previously shown, the binding of fragments is much less sensitive to the geometry of the binding pockets and thus the conformations of the surrounding side chains than docking larger compounds.27,28\n\nIn fact, it is well-known that the hit rates are higher in screening fragment libraries than in direct high-throughput screening of larger ligands.29 Since fragment binding yields information on the nature of binding sites, including their druggability, and fragments can frequently be extended to larger and higher affinity ligands, our results suggest that the AF2-generated models must be suitable for computational approaches to fragment-based drug discovery. However, we also show that obtaining good results may require generating separate AF2 models for the ligand binding domains, preferably using forced sampling with multiple initial seeds, rather than simply mapping the models downloaded from the AlphaFold Protein Structure Database.30 ■MATERIALS AND METHODS\n\nBenchmark Set. We have previously developed a benchmark set of 62 proteins, listed in Table 1, for testing computational methods for the identification of binding hot spots with an emphasis on fragment-based ligand discovery.31"
+   }
+  },
+  {
+   "seccion": "Límites",
+   "frase": "A eso se añade la dificultad del conjunto: el PoseBusters Benchmark set se eligió como un conjunto de prueba difícil, que no contiene ningún complejo presente en los datos de entrenamiento de los métodos evaluados [@buttenschoenPoseBustersAIbasedDocking2024].",
+   "previa": "Nuestro 17 % de acierto sobre modelos de AlphaFold se obtuvo con Open Babel, estados de protonación sin revisar, receptor rígido y modelo sin minimizar.",
+   "clave": "buttenschoenPoseBustersAIbasedDocking2024",
+   "veredicto": "apoyada",
+   "motivo": "La obra dice que el PoseBusters Benchmark set se eligió como conjunto de prueba difícil con complejos en los que ninguno de los métodos fue entrenado.",
+   "pasaje": {
+    "id": "buttenschoenPoseBustersAIbasedDocking2024#22",
+    "seccion": "Results",
+    "paginas": "6",
+    "texto": "Fig. 1 Comparative performance of the docking methods. The Astex Diverse set (85 cases) was chosen as an easy test set containing many complexes the ﬁve DL-based methods were trained on while the PoseBusters Benchmark set (308 cases) was chosen to be a diﬃcult test set containing complexes none of the methods was trained on. The striped bars show the share of predictions of each method that have an RMSD within 2 Å and the solid bars show the subset that in addition have valid geometries and energies, i.e., pass all PoseBuster tests and are therefore ‘PB-Valid’. DiﬀDock appears to outperform the classical methods on the Astex Diverse set when only binding mode RMSD is considered (striped teal bars). However, when physical plausibility is also considered (solid teal bars) or when presented with the PoseBusters Benchmark set (coral bars), AutoDock Vina and Gold outperform all DL-based methods.\n\nFig. 2 Waterfall plot showing the PoseBusters tests as ﬁlters for the TankBind predictions on the Astex Diverse data set. The tests in the PoseBuster test suits are described in Table 4. The leftmost (dotted) bar shows the number of complexes in the test set. The red bars show the number of predictions that fail with each additional test going from left to right. The rightmost (solid) bar indicates the number of predictions that pass all tests, i.e. those that are ‘PB-Valid’. For the 85 test cases in the Astex Diverse set 50 (59%) predictions have RMSD within 2 Å RMSD and 5 (5.9%) pass all tests. Fig. S5 and S6 in the ESI† show waterfall plots for all methods and both data sets."
+   }
+  },
+  {
+   "seccion": "Límites",
+   "frase": "Holcomb y colaboradores, trabajando con 2474 complejos del conjunto refinado de PDBbind y AutoDock-GPU v1.5.3, obtuvieron un 41 % de acierto en el redocking sobre la estructura cristalográfica y un 17 % sobre las estructuras predichas por AlphaFold2 [@holcomb2023evaluation].",
+   "previa": "Dicho eso, conviene ponerla al lado de las publicadas, porque la comparación resulta menos desfavorable de lo esperado.",
+   "clave": "holcomb2023evaluation",
+   "veredicto": "apoyada",
+   "motivo": "Los pasajes recogen 2474 complejos del refinado de PDBbind, AutoDock-GPU v1.5.3, 41 % en redocking cristalográfico y 17 % sobre estructuras de AF2 (RMSD < 2 Å).",
+   "pasaje": {
+    "id": "holcomb2023evaluation#5",
+    "seccion": "2  RESULTS",
+    "paginas": "2",
+    "texto": "2.1 | Docking using PDBbind structures and AlphaFold2 models\n\nTo assess the performance of AutoDock simulations using AlphaFold2 structures, we started with the refined\n\nset of protein-ligand complexes in the PDBbind database (Wang et al., 2005). For docking calculations, we used AutoDock-GPU v1.5.3 (Santos-Martins et al., 2021), the current version of AutoDock that leverages acceleration by Graphics Processing Units. Of the 5316 complexes in the refined set of the PDBbind database, 2907 are human proteins and had structures predicted by AF2 in January of 2022. Of this set, 2474 were parsed without issues in ligand valence and protonation states which could not be resolved by OpenBabel (O'Boyle et al., 2011), and were used for docking. Redocking against the crystal structure with AutoDock-GPU led to a 41% success rate, measured by the RMSD of the highest-ranked docked pose of less than 2 Å. This is comparable to a previously published performance of AutoDock 4 of 45% (Huey et al., 2007). By contrast, docking against the AF2-predicted structures led to a 17% success rate. The docking success rate was not substantially impacted by the oligomeric nature of the complex, and both docking tasks were hindered by the absence of a cofactor during docking otherwise present in the crystal complex (Table 1)."
+   }
+  },
+  {
+   "seccion": "Límites",
+   "frase": "Lo que difiere es el control: nuestro 72 % está por encima de su 41 % y también por encima del 58 % que AutoDock Vina alcanzó en el PoseBusters Benchmark set atendiendo solo al criterio de RMSD [@buttenschoenPoseBustersAIbasedDocking2024].",
+   "previa": "Nuestro 17 % sobre el modelo coincide con el suyo.",
+   "clave": "buttenschoenPoseBustersAIbasedDocking2024",
+   "veredicto": "apoyada",
+   "motivo": "La obra da 58 % para AutoDock Vina en el PoseBusters Benchmark set solo con RMSD (barras rayadas, sin PB-validez); el resto de la frase compara cifras propias del documento.",
+   "pasaje": {
+    "id": "buttenschoenPoseBustersAIbasedDocking2024#21",
+    "seccion": "Results",
+    "paginas": "6",
+    "texto": "The results on the Astex Diverse set suggest that despite what the RMSD # 2 Å criterion would indicate, no DL-based method outperforms classical docking methods when the physical plausibility of the ligand binding mode is taken into account. However, DiﬀDock in particular is capable of making a large number of useful predictions.\n\n3.2 Results on the PoseBusters Benchmark set\n\nThe results of the seven (AutoDock Vina, Gold, DeepDock, DiﬀDock, EquiBind, TankBind, Uni-Mol) docking methods on the PoseBusters Benchmark set are shown in coral in Fig. 1. The striped bars show the performance only in terms of coverage (RMSD within 2 Å) and the solid bars show the performance in terms of PB-validity (passing all of PoseBusters tests).\n\nThe PoseBusters Benchmark set was designed to contain no complexes that are in the training data for any of the methods. Performing well on this data set requires a method to be able to generalise well.\n\nAll methods perform worse on the PoseBusters Benchmark set than the Astex Diverse set. Gold (55%) and AutoDock Vina (58%) perform the best out of the seven methods with (solid coral bars) and without (striped coral bars) considering PB- validity. On the PoseBusters Benchmark set, the best performing DL method, DiﬀDock (12%), does not compete with the two standard docking methods. Gold and AutoDock Vina again pass the most tests but for a few protein–ligand clashes.\n\nThe waterfall plots in ESI Fig. S6† show which tests fail for each method on the PoseBusters Benchmark set. Again, the"
+   }
+  },
+  {
+   "seccion": "Límites",
+   "frase": "Škrinjar y colaboradores recuerdan que el docking se beneficia enormemente de una definición del bolsillo, con el centro y un tamaño aproximado de caja prefijados, y que sin esa información, en docking a ciegas, cabe esperar un rendimiento bastante pobre [@skrinjar2026evaluating].",
+   "previa": "Centrar la caja en el ligando experimental es información que en un caso real no se tiene.",
+   "clave": "skrinjar2026evaluating",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje 27 dice que el docking se beneficia mucho de una definición del bolsillo (centro y tamaño aproximado de caja) y que sin ella (docking a ciegas) se espera un rendimiento bastante pobre.",
+   "pasaje": {
+    "id": "skrinjar2026evaluating#27",
+    "seccion": "Results",
+    "paginas": "9",
+    "texto": "Toward realistic physics baselines An obvious question arising from our analysis is the performance of physics-based rigid ligand-docking methods on Runs N’ Poses. Unfortunately, comparing rigid docking to cofolding is not straightforward for several reasons. First, docking requires an input protein structure while cofolding starts from the protein sequence. Second, the input protein conformation is required to be very close to the ground truth holo conformation of the protein, with even slight side chain deviations often resulting in very poor performance18. Third, docking benefits greatly from a pocket definition, where the center of the pocket and a rough box size describing the area in which the ligand should fit is prespecified. Without this information (also known as blind docking), performance is expected to be quite poor39. Finally, the scoring aspect of docking in which predicted poses are ranked to find one top pose is known to be unreliable40 and thus typical docking benchmarks use the best of n poses to disentangle the impact of pose prediction versus scoring. With all of these caveats in mind, we designed five baselines serving different purposes (Table 1, methodological details are described in the Methods)."
+   }
+  },
+  {
+   "seccion": "Límites",
+   "frase": "El razonamiento general lo respaldan Buttenschoen y colaboradores, que argumentan que la partición de entrenamiento y test basada solo en la fecha de publicación es insuficiente para comprobar la generalización a dianas nuevas y que hay que informar de la identidad de secuencia entre las proteínas de entrenamiento y las de test [@buttenschoenPoseBustersAIbasedDocking2024].",
+   "previa": "Tercero, los modelos provienen de la versión 6 de la base de datos AlphaFold, generada en 2025, que pudo usar como plantilla estructuras del PDB posteriores a 2021, incluidas posiblemente algunas de las de este conjunto; el parecido entre modelo y experimental podría estar inflado.",
+   "clave": "buttenschoenPoseBustersAIbasedDocking2024",
+   "veredicto": "apoyada",
+   "motivo": "El pasaje afirma que la partición temporal es insuficiente para probar la generalización a dianas nuevas y que debe informarse de la identidad de secuencia entre proteínas de entrenamiento y test.",
+   "pasaje": {
+    "id": "buttenschoenPoseBustersAIbasedDocking2024#27",
+    "seccion": "Discussion / RMSD",
+    "paginas": "8",
+    "texto": "Our results also show that, unlike classical docking methods, DL-based docking methods do not generalise well to novel data. The performance of the DL-based methods on the PoseBusters Benchmark set overall was poor and the subset of the PoseBusters Benchmark set with low sequence identity to PDBbind 2020 revealed that DL-based methods are prone to overtting to the proteins they were trained on. Our analysis of the targets with sequence identity lower than 30% to any member of PDBbind General Set v2020 revealed that across all of the DL-based docking methods almost no physically valid poses were generated within the 2 Å threshold.\n\nThe most commonly-used train–test approach for building DL-based docking models is time-based, e.g., complexes released before a certain date are used for training and complexes released later for testing. Based on our results, we argue that this is insuﬃcient for testing generalisation to novel targets and the sequence identity between the proteins in the training and test must be reported on."
+   }
+  },
+  {
+   "seccion": "Límites",
+   "frase": "Este último punto importa porque Holcomb y colaboradores encontraron que la naturaleza oligomérica del complejo no afectaba sustancialmente al acierto del docking, mientras que la ausencia de un cofactor presente en el complejo cristalográfico sí obstaculizaba las dos tareas de docking [@holcomb2023evaluation].",
+   "previa": "Cuarto, se usó una sola cadena por complejo y un solo intento por complejo, y se ignoraron los cofactores, las demás cadenas y el estado de oligomerización.",
+   "clave": "holcomb2023evaluation",
+   "veredicto": "apoyada",
+   "motivo": "La obra indica que la oligomerización no afectó sustancialmente el éxito del docking y que la ausencia de un cofactor presente en el complejo cristalográfico obstaculizó ambas tareas de docking.",
+   "pasaje": {
+    "id": "holcomb2023evaluation#5",
+    "seccion": "2  RESULTS",
+    "paginas": "2",
+    "texto": "2.1 | Docking using PDBbind structures and AlphaFold2 models\n\nTo assess the performance of AutoDock simulations using AlphaFold2 structures, we started with the refined\n\nset of protein-ligand complexes in the PDBbind database (Wang et al., 2005). For docking calculations, we used AutoDock-GPU v1.5.3 (Santos-Martins et al., 2021), the current version of AutoDock that leverages acceleration by Graphics Processing Units. Of the 5316 complexes in the refined set of the PDBbind database, 2907 are human proteins and had structures predicted by AF2 in January of 2022. Of this set, 2474 were parsed without issues in ligand valence and protonation states which could not be resolved by OpenBabel (O'Boyle et al., 2011), and were used for docking. Redocking against the crystal structure with AutoDock-GPU led to a 41% success rate, measured by the RMSD of the highest-ranked docked pose of less than 2 Å. This is comparable to a previously published performance of AutoDock 4 of 45% (Huey et al., 2007). By contrast, docking against the AF2-predicted structures led to a 17% success rate. The docking success rate was not substantially impacted by the oligomeric nature of the complex, and both docking tasks were hindered by the absence of a cofactor during docking otherwise present in the crystal complex (Table 1)."
+   }
+  }
+ ],
+ "cifras": {
+  "comprobadas": 43,
+  "con_origen": 43,
+  "sin_origen": [],
+  "ficheros": [
+   "bolsillos.csv",
+   "cifras_del_texto.csv",
+   "docking_caja_ajustada.csv",
+   "docking_caja_grande.csv",
+   "resumen_docking_ajustada.csv",
+   "resumen_por_confianza.csv"
+  ]
+ }
+}
